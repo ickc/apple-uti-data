@@ -1,3 +1,19 @@
+- com.apple.resolvable:
+  - public.symlink
+  - com.apple.mount-point
+  - com.apple.alias-record
+  - com.apple.alias-file
+- org.gnu.gnu-zip-archve:
+  - org.gnu.gnu-zip-tar-archive
+- public.archive:
+  - public.disk-image
+  - com.sun.java-archive
+  - org.gnu.gnu-tar-archive:
+    - public.tar-archive
+  - org.gnu.gnu-zip-archive
+  - com.apple.binhex-archive
+  - com.apple.macbinary-archive
+  - com.pkware.zip-archive
 - public.content:
   - public.composite-content:
     - public.presentation
@@ -67,22 +83,6 @@
       - public.aifc-audio
       - public.aiff-audio
       - com.apple.coreaudio-format
-- public.archive:
-  - public.disk-image
-  - com.sun.java-archive
-  - org.gnu.gnu-tar-archive:
-    - public.tar-archive
-  - org.gnu.gnu-zip-archive
-  - com.apple.binhex-archive
-  - com.apple.macbinary-archive
-  - com.pkware.zip-archive
-- com.apple.resolvable:
-  - public.symlink
-  - com.apple.mount-point
-  - com.apple.alias-record
-  - com.apple.alias-file
-- org.gnu.gnu-zip-archve:
-  - org.gnu.gnu-zip-tar-archive
 - public.executable:
   - com.netscape.javascript-source
   - public.object-code
