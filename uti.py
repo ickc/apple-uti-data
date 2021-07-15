@@ -72,17 +72,18 @@ def parse_parent(text: str, regex=re.compile(r'[\w.-]+')) -> List[str]:
     if text == "-":
         return []
     else:
-        return regex.findall(filter_string(text))
+        res = regex.findall(filter_string(text))
+        # probably a typo
+        return ['public.mpeg-4' if uti == 'public.mpeg4' else uti for uti in res]
 
 
-@dataclass
+@dataclass(order=True)
 class Node:
     name: str
-    parents: List[Node] = field(default_factory=list)
-    children: List[Node] = field(default_factory=list)
 
-    def __eq__(self, other) -> bool:
-        return self.name == other.name
+    def __post_init__(self):
+        self.parents = []
+        self.children = []
 
     def __hash__(self) -> int:
         return hash(self.name)
@@ -101,7 +102,7 @@ class Node:
     @property
     def proper_grandparents(self) -> List[Node]:
         """Return the ultimate grandparents without self."""
-        return [grandparent for grandparent in self.grandparents if grandparent is not self]
+        return sorted(grandparent for grandparent in self.grandparents if grandparent is not self)
 
     @property
     def children_and_grandchildren(self) -> Set[Node]:
@@ -115,7 +116,7 @@ class Node:
     @property
     def proper_children_and_grandchildren(self) -> List[Node]:
         """Return children recursively without self."""
-        return [children_and_grandchildren for children_and_grandchildren in self.children_and_grandchildren if children_and_grandchildren is not self]
+        return sorted(children_and_grandchildren for children_and_grandchildren in self.children_and_grandchildren if children_and_grandchildren is not self)
 
     @property
     def tree(self) -> Union[Node, Dict[Node, list]]:
