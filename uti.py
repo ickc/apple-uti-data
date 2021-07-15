@@ -166,6 +166,7 @@ def get_name_to_node(
 def get_tree(name_to_node: Dict[str, Node]) -> List[Dict[Node, dict]]:
     grandgrandparents = union(node.proper_grandparents for node in name_to_node.values())
     logger.info('Obtained %s top level UTIs.', len(grandgrandparents))
+    grandgrandparents = sorted(grandgrandparents)
     tree = [grandgrandparent.tree for grandgrandparent in grandgrandparents]
     return tree
 
