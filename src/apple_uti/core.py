@@ -71,11 +71,8 @@ class Node:
 
 
 @dataclass
-class Uti:
-
-    @property
-    def data(self) -> Dict[str, List[str]]:
-        raise NotImplementedError
+class UtiNetwork:
+    data: Dict[str, List[str]]
 
     @cached_property
     def name_to_node(
@@ -129,7 +126,39 @@ class Uti:
 
 
 @dataclass
-class UtiFromWeb(Uti):
+class UtiFromGeneric:
+    tree_path: Path = Path('dist/UTI-tree.yml')
+    children_path: Path = Path('dist/UTI-children.yml')
+
+    @property
+    def data(self) -> Dict[str, List[str]]:
+        raise NotImplementedError
+
+    def run_all(self):
+        import yaml
+        import yamlloader
+
+        uti = UtiNetwork(self.data)
+        tree_path = self.tree_path
+        children_path = self.children_path
+
+        tree_path.parent.mkdir(parents=True, exist_ok=True)
+        with tree_path.open('w') as f:
+            yaml.dump(uti.tree_json_like, f, Dumper=yamlloader.ordereddict.CSafeDumper, default_flow_style=False)
+
+        children_path.parent.mkdir(parents=True, exist_ok=True)
+        with children_path.open('w') as f:
+            yaml.dump(uti.children_json_like, f, Dumper=yamlloader.ordereddict.CSafeDumper, default_flow_style=False)
+
+
+@dataclass
+class UtiFromWeb(UtiFromGeneric):
+    """Parse Apple UTI table to usable data structure and dump to YAML.
+
+    :param tree_path: path to dump a tree structure of the UTI in YAML.
+    :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param url: url to Apple's documentation on UTI.
+    """
     url: str = 'https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html'
 
     @staticmethod
@@ -179,7 +208,13 @@ class UtiFromWeb(Uti):
 
 
 @dataclass
-class UtiFromSystem(Uti):
+class UtiFromSystem(UtiFromGeneric):
+    """Parse Apple UTI table to usable data structure and dump to YAML.
+
+    :param tree_path: path to dump a tree structure of the UTI in YAML.
+    :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param path: path to lsregister.
+    """
     path: Path = Path('/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister')
 
     def __post_init__(self):
@@ -272,3 +307,34 @@ class UtiFromSystem(Uti):
                 parents.remove(name)
         res = {key: sorted(value) for key, value in temp.items()}
         return res
+
+
+@dataclass
+class UtiFromAll(UtiFromWeb, UtiFromSystem):
+    """Parse Apple UTI table to usable data structure and dump to YAML.
+
+    :param tree_path: path to dump a tree structure of the UTI in YAML.
+    :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param url: url to Apple's documentation on UTI.
+    :param path: path to lsregister.
+    """
+
+    @cached_property
+    def data(self) -> Dict[str, List[str]]:
+        uti_from_web = UtiFromWeb(
+            tree_path=self.tree_path,
+            children_path=self.children_path,
+            url=self.url,
+        )
+        uti_from_system = UtiFromSystem(
+            tree_path=self.tree_path,
+            children_path=self.children_path,
+            path=self.path,
+        )
+        data = uti_from_web.data.copy()
+        for key, value in uti_from_system.data.items():
+            if key in data:
+                data[key] = sorted(set(data[key]) | set(value))
+            else:
+                data[key] = value
+        return data

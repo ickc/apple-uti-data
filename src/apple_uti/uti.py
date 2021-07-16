@@ -3,42 +3,24 @@
 from __future__ import annotations
 
 from logging import getLogger
-from pathlib import Path
-
-import yaml
-import yamlloader
 import defopt
 
-from .core import UtiFromWeb, UtiFromSystem
+from .core import UtiFromWeb, UtiFromSystem, UtiFromAll
 
 logger = getLogger('apple_uti')
 
 
-def main(
-    *,
-    method: str = 'web',
-    tree_path: Path = Path('dist/UTI-tree.yml'),
-    children_path: Path = Path('dist/UTI-children.yml'),
-):
-    """Parse Apple UTI table to usable data structure and dump to YAML.
-
-    :param method: can be web or system.
-    :param tree_path: path to dump a tree structure of the UTI in YAML.
-    :param children_path: path to dump a mapping from UTI to all children in YAML.
-    """
-    uti = UtiFromWeb() if method == 'web' else UtiFromSystem()
-
-    tree_path.parent.mkdir(parents=True, exist_ok=True)
-    with tree_path.open('w') as f:
-        yaml.dump(uti.tree_json_like, f, Dumper=yamlloader.ordereddict.CSafeDumper, default_flow_style=False)
-
-    children_path.parent.mkdir(parents=True, exist_ok=True)
-    with children_path.open('w') as f:
-        yaml.dump(uti.children_json_like, f, Dumper=yamlloader.ordereddict.CSafeDumper, default_flow_style=False)
-
-
 def cli():
-    defopt.run(main)
+    uti = defopt.run(
+        {
+            'web': UtiFromWeb,
+            'system': UtiFromSystem,
+            'all': UtiFromAll,
+        },
+        strict_kwonly=False,
+        show_types=True,
+    )
+    uti.run_all()
 
 
 if __name__ == "__main__":
