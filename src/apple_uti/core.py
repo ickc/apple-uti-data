@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
+from pathlib import Path
 from functools import cached_property
 from dataclasses import dataclass
 from logging import getLogger
@@ -12,9 +13,9 @@ import pandas as pd
 from .util import union, stringify
 
 if TYPE_CHECKING:
-    from typing import List, Union, Dict, Set
+    from typing import List, Union, Dict, Set, Tuple, Optional
 
-logger = getLogger('pantable')
+logger = getLogger('apple_uti')
 
 
 @dataclass(order=True)
@@ -175,3 +176,95 @@ class UtiFromWeb(Uti):
             self.parse_parent(row.iloc[1])
             for _, row in self.table.iterrows()
         }
+
+
+@dataclass
+class UtiFromSystem(Uti):
+    path: Path = Path('/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister')
+
+    def __post_init__(self):
+        import platform
+
+        assert platform.system() == 'Darwin'
+        assert self.path.is_file()
+
+    @cached_property
+    def get_lsregister_dump(self) -> str:
+        import subprocess
+
+        cmd = [
+            str(self.path),
+            '-dump',
+        ]
+        logger.info('Running %s', subprocess.list2cmdline(cmd))
+        res = subprocess.run(cmd, capture_output=True, check=True)
+        logger.info('Obtained data from lsregister.')
+        return res.stdout.decode()
+
+    @staticmethod
+    def split_lsregister_dump(
+        text: str,
+        regex=re.compile(r'\n-+\n'),
+    ) -> Tuple[str, List[str]]:
+        temp = regex.split(text)
+        # summary, list of data
+        return temp[0], temp[1:]
+
+    @staticmethod
+    def parse_datum(
+        text: str,
+        regex=re.compile(r'\n([\w -]+): +(.+)'),
+    ) -> Dict[str, str]:
+        return dict(regex.findall('\n' + text))
+
+    @staticmethod
+    def get_keys(
+        text: str,
+        regex=re.compile(r'^([^ ][^:]*):'),
+    ) -> List[str]:
+        keys = []
+        for line in text.split('\n'):
+            res = regex.findall(line)
+            assert len(res) < 2
+            if len(res) == 1:
+                keys.append(res[0])
+        return keys
+
+    @staticmethod
+    def parse_parent(text: Optional[str]) -> List[str]:
+        """Parse the UTI from "conforms to" column.
+        """
+        if type(text) is str:
+            return [i.strip() for i in text.split(',')]
+        else:
+            return []
+
+    @cached_property
+    def table(self):
+        text = self.get_lsregister_dump
+        summary, data = self.split_lsregister_dump(text)
+        logger.info('lsregister summary:\n%s', summary)
+
+        # sanity check
+        for i, datum in enumerate(data):
+            keys = self.get_keys(datum)
+            dict_ = self.parse_datum(datum)
+            assert set(keys) == set(dict_.keys())
+
+        df = pd.DataFrame([self.parse_datum(datum) for datum in data])
+        df_uti = df[~df.uti.isna()].dropna(axis=1, how='all')
+        logger.info('Obtained a table with shape %s', df_uti.shape)
+        return df_uti
+
+    @cached_property
+    def data(self) -> Dict[str, List[str]]:
+        from collections import defaultdict
+
+        df_uti = self.table
+
+        temp: Dict[str, Set[str]] = defaultdict(set)
+        for _, row in df_uti.iterrows():
+            temp[row.uti].update(self.parse_parent(row['conforms to']))
+        logger.info('Consolidated data into %s unique UTIs.', len(temp))
+        res = {key: sorted(value) for key, value in temp.items()}
+        return res
