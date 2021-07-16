@@ -83,8 +83,6 @@ bump2version = "*"
 [tool.poetry.extras]
 extras = [
     "coloredlogs",
-    "tabulate",
-    "yamlloader",
 ]
 tests = [
     "coverage",
