@@ -1,0 +1,279 @@
+com.adobe.postscript-font:
+- public.font
+com.adobe.postscript-lwfn-font:
+- com.adobe.postscript-font
+com.adobe.postscript-pfb-font:
+- com.adobe.postscript-font
+com.adobe.postscript.pfa-font:
+- com.adobe.postscript-font
+com.apple.alias-file:
+- com.apple.resolvable
+- public.data
+com.apple.alias-record:
+- com.apple.resolvable
+- public.data
+com.apple.applescript.script:
+- public.data
+com.apple.applescript.text:
+- public.script
+com.apple.application:
+- public.executable
+com.apple.application-bundle:
+- com.apple.application
+- com.apple.bundle
+- com.apple.package
+com.apple.application-file:
+- com.apple.application
+- public.data
+com.apple.binhex-archive:
+- public.archive
+- public.data
+com.apple.bundle:
+- public.directory
+com.apple.colorsync-profile:
+- public.data
+com.apple.coreaudio-format:
+- public.audio
+com.apple.dashboard-widget:
+- com.apple.bundle
+- com.apple.package
+com.apple.deprecated-application-file:
+- com.apple.application-file
+com.apple.flat-rtfd:
+- public.composite-content
+- public.data
+com.apple.font-suitcase:
+- public.font
+com.apple.framework:
+- com.apple.bundle
+com.apple.icns:
+- public.image
+com.apple.ink.inktext:
+- public.data
+com.apple.macbinary-archive:
+- public.archive
+- public.data
+com.apple.mach-o-binary:
+- public.data
+- public.executable
+com.apple.macpaint-image:
+- public.image
+com.apple.metadata-importer:
+- com.apple.plugin
+com.apple.mount-point:
+- com.apple.resolvable
+- public.item
+com.apple.package:
+- public.directory
+com.apple.pef-binary:
+- public.data
+- public.executable
+com.apple.pict:
+- public.image
+com.apple.plugin:
+- com.apple.bundle
+- com.apple.package
+com.apple.protected-mpeg-4-audio:
+- public.audio
+com.apple.quartz-composer-composition:
+- public.data
+- public.executable
+com.apple.quicktime-image:
+- public.image
+com.apple.quicktime-movie:
+- public.movie
+com.apple.resolvable: []
+com.apple.rez-source:
+- public.source-code
+com.apple.rtfd:
+- com.apple.package
+- public.composite-content
+com.apple.symbol-export:
+- public.source-code
+com.apple.traditional-mac-plain-text:
+- public.plain-text
+com.apple.truetype-datafork-suitcase-font:
+- public.truetype-font
+com.apple.txn.text-multimedia-data:
+- public.composite-content
+- public.data
+com.apple.webarchive:
+- public.composite-content
+- public.data
+com.microsoft.windows-dynamic-link-library:
+- public.data
+- public.executable
+com.microsoft.windows-executable:
+- public.data
+- public.executable
+com.netscape.javascript-source:
+- public.executable
+- public.source-code
+com.pkware.zip-archive:
+- public.archive
+- public.data
+com.sun.java-archive:
+- public.archive
+- public.data
+- public.executable
+com.sun.java-class:
+- public.data
+- public.executable
+com.sun.java-source:
+- public.source-code
+com.sun.java-web-start:
+- public.xml
+org.gnu.gnu-tar-archive:
+- public.archive
+- public.data
+org.gnu.gnu-zip-archive:
+- public.archive
+- public.data
+org.gnu.gnu-zip-tar-archive:
+- org.gnu.gnu-zip-archve
+public.3gpp:
+- public.movie
+public.3gpp2:
+- public.movie
+public.aifc-audio:
+- public.audio
+public.aiff-audio:
+- public.audio
+public.archive: []
+public.assembly-source:
+- public.source-code
+public.audio:
+- public.audiovisual-content
+public.audiovisual-content:
+- public.content
+- public.data
+public.avi:
+- public.movie
+public.c-header:
+- public.source-code
+public.c-plus-plus-header:
+- public.source-code
+public.c-plus-plus-source:
+- public.source-code
+public.c-source:
+- public.source-code
+public.calendar-event: []
+public.camera-raw-image:
+- public.image
+public.composite-content:
+- public.content
+public.contact: []
+public.content: []
+public.cpio-archive:
+- public.data
+public.csh-script:
+- public.shell-script
+public.data:
+- public.item
+public.database: []
+public.directory:
+- public.item
+public.disk-image:
+- public.archive
+public.executable: []
+public.fax:
+- public.image
+public.file-url:
+- public.url
+public.folder:
+- public.directory
+public.font:
+- public.data
+public.html:
+- public.text
+public.image:
+- public.content
+- public.data
+public.item: []
+public.jpeg:
+- public.image
+public.jpeg-2000:
+- public.image
+public.message: []
+public.mig-source:
+- public.source-code
+public.movie:
+- public.audiovisual-content
+public.mp3:
+- public.audio
+public.mpeg:
+- public.movie
+public.mpeg-4:
+- public.movie
+public.mpeg-4-audio:
+- public.audio
+- public.mpeg-4
+public.object-code:
+- public.data
+- public.executable
+public.objective-c-plus-plus-source:
+- public.source-code
+public.objective-c-source:
+- public.source-code
+public.opentype-font:
+- public.font
+public.perl-script:
+- public.shell-script
+public.php-script:
+- public.shell-script
+public.plain-text:
+- public.text
+public.png:
+- public.image
+public.presentation:
+- public.composite-content
+public.python-script:
+- public.shell-script
+public.rtf:
+- public.text
+public.ruby-script:
+- public.shell-script
+public.script:
+- public.source-code
+public.shell-script:
+- public.script
+public.source-code:
+- public.plain-text
+public.symlink:
+- com.apple.resolvable
+- public.item
+public.tar-archive:
+- org.gnu.gnu-tar-archive
+public.text:
+- public.content
+- public.data
+public.tiff:
+- public.image
+public.truetype-collection-font:
+- public.font
+public.truetype-font:
+- public.font
+public.truetype-ttf-font:
+- public.truetype-font
+public.ulaw-audio:
+- public.audio
+public.url:
+- public.data
+public.url-name: []
+public.utf16-external-plain-text:
+- public.plain-text
+public.utf16-plain-text:
+- public.plain-text
+public.utf8-plain-text:
+- public.plain-text
+public.vcard:
+- public.content
+- public.data
+public.video:
+- public.movie
+public.volume:
+- public.folder
+public.xbitmap-image:
+- public.image
+public.xml:
+- public.text
