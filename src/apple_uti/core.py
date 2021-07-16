@@ -266,5 +266,9 @@ class UtiFromSystem(Uti):
         for _, row in df_uti.iterrows():
             temp[row.uti].update(self.parse_parent(row['conforms to']))
         logger.info('Consolidated data into %s unique UTIs.', len(temp))
+        for name, parents in temp.items():
+            if name in parents:
+                logger.warning('%s in %s', name, parents)
+                parents.remove(name)
         res = {key: sorted(value) for key, value in temp.items()}
         return res
