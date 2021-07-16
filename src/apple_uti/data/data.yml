@@ -117,6 +117,8 @@ com.adobe.postscript-pfa-font:
 - com.adobe.postscript-font
 com.adobe.postscript-pfb-font:
 - com.adobe.postscript-font
+com.adobe.postscript.pfa-font:
+- com.adobe.postscript-font
 com.adobe.raw-image:
 - public.camera-raw-image
 com.adobe.rgb-color:
@@ -244,6 +246,7 @@ com.apple.application-and-system-extension:
 - com.apple.xpc-service
 com.apple.application-bundle:
 - com.apple.application
+- com.apple.bundle
 - com.apple.localizable-name-bundle
 - com.apple.package
 com.apple.application-file:
@@ -376,6 +379,7 @@ com.apple.csstore:
 - public.data
 - public.database
 com.apple.dashboard-widget:
+- com.apple.bundle
 - com.apple.localizable-name-bundle
 - com.apple.package
 com.apple.data-container:
@@ -2045,6 +2049,8 @@ com.apple.macbookpro-17:
 com.apple.macbookpro-17-unibody:
 - com.apple.macbookpro
 com.apple.mach-o-binary:
+- public.data
+- public.executable
 - public.unix-executable
 com.apple.mach-o-bundle:
 - com.apple.mach-o-binary
@@ -3358,6 +3364,8 @@ com.stuffit.archive.sit:
 com.stuffit.archive.sitx:
 - com.allume.stuffit-archive
 com.sun.java-archive:
+- public.archive
+- public.data
 - public.executable
 - public.zip-archive
 com.sun.java-class:
@@ -3703,6 +3711,7 @@ org.gnu.gnu-zip-archive:
 - public.data
 org.gnu.gnu-zip-tar-archive:
 - org.gnu.gnu-zip-archive
+- org.gnu.gnu-zip-archve
 org.haskell.haskell:
 - public.source-code
 org.idpf.epub-container:
@@ -4554,6 +4563,7 @@ public.mpeg-4:
 - public.movie
 public.mpeg-4-audio:
 - public.audio
+- public.mpeg-4
 public.mpo-image:
 - public.image
 public.named-pipe:
@@ -4670,6 +4680,7 @@ public.tiff:
 - public.image
 public.to-do-item: []
 public.truetype-collection-font:
+- public.font
 - public.truetype-font
 public.truetype-font:
 - public.font
@@ -4698,6 +4709,8 @@ public.uuencoded-archive:
 - public.data
 public.vcard:
 - public.contact
+- public.content
+- public.data
 - public.text
 public.video:
 - public.movie
