@@ -1,104 +1,3199 @@
+ca.mcgill.mni.bic.mnc:
+- public.image
+com.adobe.actionscript:
+- public.source-code
+com.adobe.cep.dnd.pasteboardtype:
+- public.data
+com.adobe.cmyk-color:
+- public.data
+com.adobe.edn:
+- public.data
+com.adobe.encapsulated-postscript:
+- com.adobe.postscript
+- public.data
+com.adobe.etd:
+- public.data
+com.adobe.fdf:
+- public.data
+com.adobe.flash.video:
+- public.movie
+com.adobe.illustrator.aact: []
+com.adobe.illustrator.aevt: []
+com.adobe.illustrator.ai-image:
+- public.image
+com.adobe.illustrator.aicb:
+- public.image
+com.adobe.illustrator.aict: []
+com.adobe.illustrator.anmm: []
+com.adobe.illustrator.arnm: []
+com.adobe.illustrator.aset: []
+com.adobe.illustrator.ate2:
+- public.plain-text
+com.adobe.illustrator.avcl: []
+com.adobe.illustrator.brhm: []
+com.adobe.illustrator.clrm: []
+com.adobe.illustrator.cstm: []
+com.adobe.illustrator.dib:
+- public.data
+- public.image
+com.adobe.illustrator.enmf:
+- public.data
+- public.image
+com.adobe.illustrator.epsf:
+- public.image
+com.adobe.illustrator.grdm: []
+com.adobe.illustrator.hdrp:
+- public.plain-text
+com.adobe.illustrator.hfs: []
+com.adobe.illustrator.none: []
+com.adobe.illustrator.nonm: []
+com.adobe.illustrator.pgfm: []
+com.adobe.illustrator.phfs: []
+com.adobe.illustrator.pstm: []
+com.adobe.illustrator.sefm: []
+com.adobe.illustrator.snam: []
+com.adobe.illustrator.stxt:
+- public.plain-text
+com.adobe.illustrator.svg:
+- public.data
+- public.image
+com.adobe.illustrator.swgm: []
+com.adobe.illustrator.swtm: []
+com.adobe.illustrator.symm: []
+com.adobe.illustrator.text:
+- public.plain-text
+com.adobe.illustrator.utxt:
+- public.plain-text
+com.adobe.illustrator.varm: []
+com.adobe.incopy-assignment:
+- public.data
+com.adobe.incopy-document:
+- public.data
+com.adobe.indesign-book:
+- public.data
+com.adobe.indesign-document:
+- public.data
+com.adobe.indesign-import-avcl: []
+com.adobe.indesign-import-hfs:
+- public.data
+com.adobe.indesign-import-owl: []
+com.adobe.indesign-import-phfs:
+- public.data
+com.adobe.indesign-import-styl:
+- public.text
+com.adobe.indesign-import-ustl:
+- public.text
+com.adobe.indesign-interchange:
+- public.data
+com.adobe.indesign-library:
+- public.data
+com.adobe.indesign-markup:
+- public.data
+com.adobe.indesign-snippet:
+- public.data
+com.adobe.indesign-template:
+- public.data
+com.adobe.pageitem-xml-snippet:
+- public.data
+com.adobe.pdf:
+- public.composite-content
+- "public.composite-\u200Bcontent"
+- public.data
+com.adobe.photoshop-image:
+- public.image
+com.adobe.photoshop-large-image:
+- public.data
+- public.image
+com.adobe.pm-color:
+- public.data
+com.adobe.postscript:
+- public.composite-content
+- public.data
 com.adobe.postscript-font:
 - public.font
 com.adobe.postscript-lwfn-font:
 - com.adobe.postscript-font
+com.adobe.postscript-pfa-font:
+- com.adobe.postscript-font
 com.adobe.postscript-pfb-font:
 - com.adobe.postscript-font
-com.adobe.postscript.pfa-font:
-- com.adobe.postscript-font
+com.adobe.raw-image:
+- public.camera-raw-image
+com.adobe.rgb-color:
+- public.data
+com.adobe.structure-xml-snippet:
+- public.data
+com.adobe.xfdf:
+- public.composite-content
+- public.data
+com.agiletortoise.drafts.action:
+- public.data
+com.agiletortoise.drafts.actiongroup:
+- public.data
+com.agiletortoise.drafts.draftsexport:
+- public.text
+com.agiletortoise.drafts.languagegrammar:
+- public.text
+com.agiletortoise.drafts.theme:
+- public.text
+com.agiletortoise.drafts.workspace:
+- public.text
+com.alcohol-soft.mdf-image:
+- public.iso-image
+com.allume.stuffit-archive:
+- public.archive
+- public.data
+com.altools.alz-archive:
+- public.archive
+- public.data
+com.amiga.adf-archive:
+- public.archive
+- public.data
+com.amiga.adz-archive:
+- public.archive
+- public.data
+com.aone.keka-extraction:
+- com.apple.bundle
+- com.apple.package
+com.apple.accounts-icon:
+- com.apple.document-type
+com.apple.active-webpage: []
+com.apple.addressbook.group:
+- public.data
+com.apple.addressbook.group-object:
+- com.apple.addressbook.item-object
+com.apple.addressbook.item-object:
+- com.apple.applescript.object
+com.apple.addressbook.person:
+- public.contact
+- public.data
+com.apple.addressbook.person-object:
+- com.apple.addressbook.item-object
+com.apple.afp-internet-location:
+- com.apple.internet-location
+com.apple.airdrop: []
+com.apple.airport:
+- com.apple.device
+com.apple.airport-express:
+- com.apple.device
+com.apple.airport-extreme-tower:
+- com.apple.airport
+com.apple.airport-time-capsule-tower:
+- com.apple.time-capsule
+com.apple.alert: []
+com.apple.alert-caution:
+- com.apple.alert
+com.apple.alert-note:
+- com.apple.alert
+com.apple.alert-stop:
+- com.apple.alert
 com.apple.alias-file:
 - com.apple.resolvable
 - public.data
 com.apple.alias-record:
 - com.apple.resolvable
 - public.data
+com.apple.aperture.library:
+- com.apple.package
+com.apple.apple-tv:
+- com.apple.ios-device
+com.apple.apple-tv-2:
+- com.apple.apple-tv
+com.apple.apple-tv-3:
+- com.apple.apple-tv
+com.apple.apple-tv-3a:
+- com.apple.apple-tv
+com.apple.apple-tv-4:
+- com.apple.apple-tv
+com.apple.apple-tv-4k:
+- com.apple.apple-tv
+com.apple.apple-tv-4k-2nd:
+- com.apple.apple-tv
+com.apple.applescript.alias-object:
+- com.apple.applescript.object
+com.apple.applescript.alias-object.image:
+- com.apple.applescript.alias-object
+com.apple.applescript.alias-object.movie:
+- com.apple.applescript.alias-object
+com.apple.applescript.alias-object.pdf:
+- com.apple.applescript.alias-object
+com.apple.applescript.data-object:
+- com.apple.applescript.object
+com.apple.applescript.object: []
 com.apple.applescript.script:
 - public.data
-com.apple.applescript.text:
 - public.script
+com.apple.applescript.script-bundle:
+- com.apple.bundle
+- com.apple.package
+- public.composite-content
+com.apple.applescript.text:
+- public.plain-text
+- public.script
+- public.source-code
+com.apple.applescript.text-object:
+- com.apple.applescript.object
+com.apple.applescript.url-object:
+- com.apple.applescript.text-object
+com.apple.applesingle-archive:
+- public.archive
+- public.data
 com.apple.application:
 - public.executable
+com.apple.application-and-system-extension:
+- com.apple.xpc-service
 com.apple.application-bundle:
 - com.apple.application
-- com.apple.bundle
+- com.apple.localizable-name-bundle
 - com.apple.package
 com.apple.application-file:
 - com.apple.application
 - public.data
+com.apple.application-placeholder:
+- com.apple.application-bundle
+com.apple.applications-folder:
+- public.folder
+com.apple.appstore.appdownload:
+- com.apple.package
+com.apple.archive:
+- public.archive
+- public.data
+com.apple.ariadne.artrace:
+- public.data
+com.apple.arobject:
+- public.data
+com.apple.ascii-property-list:
+- com.apple.property-list
+- public.text
+com.apple.audio-podcast:
+- com.apple.podcast
+- public.audio
+com.apple.audio-unit-preset:
+- com.apple.xml-property-list
+- public.data
+- public.xml
+com.apple.audiobook:
+- public.audio
+com.apple.automator-action:
+- com.apple.plugin
+com.apple.automator-conversion-action:
+- com.apple.plugin
+com.apple.automator-type-definition:
+- com.apple.plugin
+com.apple.automator-workflow:
+- com.apple.package
+com.apple.avatarkit.animoji:
+- public.directory
+com.apple.binary-property-list:
+- com.apple.property-list
 com.apple.binhex-archive:
 - public.archive
 - public.data
+com.apple.bom-archive:
+- public.archive
+com.apple.bom-compressed-cpio:
+- com.apple.bom-archive
+- public.data
+com.apple.bonjour: []
+com.apple.bookmark:
+- com.apple.resolvable
+- public.data
 com.apple.bundle:
 - public.directory
+com.apple.calendar-store.calendar:
+- com.apple.calendar-store.item
+com.apple.calendar-store.event:
+- com.apple.calendar-store.item
+com.apple.calendar-store.item: []
+com.apple.calendar-store.todo:
+- com.apple.calendar-store.item
+com.apple.cfr-font:
+- public.font
+com.apple.chess.game:
+- public.utf8-plain-text
+com.apple.chess.pgn:
+- public.utf8-plain-text
+com.apple.cinema-display:
+- public.display
+com.apple.clips-source:
+- public.source-code
+com.apple.cocoa.attributed-string: []
+com.apple.cocoa.data: []
+com.apple.cocoa.pasteboard.character-formatting:
+- public.data
+com.apple.cocoa.pasteboard.color:
+- public.data
+com.apple.cocoa.pasteboard.find-panel-search-options:
+- public.data
+com.apple.cocoa.pasteboard.multiple-text-selection:
+- public.data
+com.apple.cocoa.pasteboard.paragraph-formatting:
+- public.data
+com.apple.cocoa.pasteboard.sound:
+- public.data
+com.apple.cocoa.path:
+- com.apple.cocoa.string
+com.apple.cocoa.string: []
+com.apple.cocoa.url: []
+com.apple.cocoa.web-archive: []
+com.apple.color-file:
+- public.data
 com.apple.colorsync-profile:
 - public.data
+com.apple.compressor.destination:
+- public.data
+com.apple.compressor.settings:
+- public.data
+com.apple.configprofile:
+- public.xml
 com.apple.coreaudio-format:
 - public.audio
-com.apple.dashboard-widget:
+com.apple.coreml.mlarchive:
+- public.data
+com.apple.coreml.mlmodelc:
+- com.apple.package
+com.apple.coreml.mlmodelkey:
+- public.data
+com.apple.coreml.model:
+- public.data
+com.apple.coresimulator.bundle:
 - com.apple.bundle
 - com.apple.package
+com.apple.coresimulator.simdevicechrome:
+- com.apple.coresimulator.bundle
+com.apple.coresimulator.simdevicetype:
+- com.apple.coresimulator.bundle
+com.apple.coresimulator.simruntime:
+- com.apple.coresimulator.bundle
+com.apple.crashreport:
+- public.log
+- public.utf8-plain-text
+com.apple.createml.project:
+- com.apple.package
+- public.content
+- public.data
+com.apple.csstore:
+- public.data
+- public.database
+com.apple.dashboard-widget:
+- com.apple.localizable-name-bundle
+- com.apple.package
+com.apple.data-container:
+- com.apple.localizable-name-bundle
+- public.folder
 com.apple.deprecated-application-file:
 - com.apple.application-file
+com.apple.desktop-folder:
+- public.folder
+com.apple.developer-folder:
+- public.folder
+com.apple.developer-transition-kit-2005:
+- com.apple.mac.tower
+com.apple.developer-transition-kit-2020:
+- com.apple.mac
+com.apple.device:
+- public.device
+com.apple.device-model-code:
+- public.text
+com.apple.disk-image:
+- public.archive
+- public.data
+- public.disk-image
+com.apple.disk-image-cdr:
+- com.apple.disk-image
+com.apple.disk-image-pc:
+- com.apple.disk-image
+com.apple.disk-image-raw:
+- com.apple.disk-image
+com.apple.disk-image-sparse:
+- com.apple.disk-image
+com.apple.disk-image-sparse-bundle:
+- com.apple.disk-image
+- com.apple.package
+com.apple.disk-image-udif:
+- com.apple.disk-image
+com.apple.disk-image-udif-segment:
+- com.apple.disk-image-udif
+com.apple.document-type:
+- public.item
+com.apple.document-type.dictionary:
+- com.apple.document-type
+com.apple.document-type.system-folder:
+- public.folder
+com.apple.documents-folder:
+- public.folder
+com.apple.dot-mac: []
+com.apple.downloads-folder:
+- public.folder
+com.apple.drawing:
+- public.image
+com.apple.driver-extension:
+- com.apple.localizable-name-bundle
+- com.apple.package
+com.apple.drop-folder:
+- public.folder
+com.apple.dt.assetcatalog:
+- public.directory
+com.apple.dt.bundle.unit-test:
+- com.apple.bundle
+- com.apple.package
+com.apple.dt.bundle.unit-test.ocunit:
+- com.apple.dt.bundle.unit-test
+com.apple.dt.bundle.unit-test.xctest:
+- com.apple.dt.bundle.unit-test
+com.apple.dt.document.apns:
+- public.json
+com.apple.dt.document.ascii-property-list:
+- com.apple.property-list
+- public.plain-text
+com.apple.dt.document.geojson:
+- public.json
+com.apple.dt.document.gpx:
+- public.xml
+com.apple.dt.document.scheme:
+- public.xml
+com.apple.dt.document.script-suite-property-list:
+- com.apple.property-list
+com.apple.dt.document.script-terminology-property-list:
+- com.apple.property-list
+com.apple.dt.document.snapshot:
+- com.apple.package
+- public.composite-content
+com.apple.dt.document.toolchain:
+- com.apple.package
+- public.composite-content
+com.apple.dt.document.workspace:
+- com.apple.package
+- public.composite-content
+com.apple.dt.document.xccrashpoint:
+- com.apple.package
+- public.composite-content
+com.apple.dt.document.xcdiskwritelog:
+- public.json
+com.apple.dt.document.xcdiskwritepoint:
+- com.apple.package
+- public.composite-content
+com.apple.dt.document.xcmetricsdata:
+- public.json
+com.apple.dt.document.xcprocessorusagelog:
+- public.json
+com.apple.dt.document.xcprocessorusagepoint:
+- com.apple.package
+- public.composite-content
+com.apple.dt.dvt.plug-in:
+- com.apple.plugin
+com.apple.dt.dvticon.spec:
+- public.data
+com.apple.dt.ide.debughierarchycontenttype:
+- com.apple.package
+- public.composite-content
+com.apple.dt.ide.memorygraphdebuggercontenttype:
+- public.data
+com.apple.dt.ide.plug-in:
+- com.apple.plugin
+com.apple.dt.interfacebuilder.document.storyboard:
+- public.xml
+com.apple.dt.interfacebuilder.document.storyboard.package:
+- com.apple.dt.interfacebuilder.document.storyboard
+- com.apple.package
+com.apple.dt.messages-sticker-pack:
+- com.apple.bundle
+- public.composite-content
+com.apple.dt.playground:
+- com.apple.package
+- public.composite-content
+com.apple.dt.playgroundpage:
+- com.apple.package
+- public.composite-content
+com.apple.dt.sample.txt:
+- public.plain-text
+com.apple.dt.stickers:
+- public.directory
+com.apple.dt.storekit:
+- com.apple.xcode.configsettings
+com.apple.dt.xcodeserver-integration:
+- com.apple.package
+com.apple.dt.xctestplancontenttype:
+- public.json
+com.apple.dt.xctestruncontenttype:
+- com.apple.property-list
+com.apple.emac:
+- com.apple.mac
+com.apple.encrypted-archive:
+- public.archive
+- public.data
+com.apple.event-kit.calendar:
+- com.apple.event-kit.item
+com.apple.event-kit.event:
+- com.apple.event-kit.item
+com.apple.event-kit.item: []
+com.apple.event-kit.reminder:
+- com.apple.event-kit.item
+com.apple.everyone-icon:
+- com.apple.document-type
+com.apple.file-internet-location:
+- com.apple.internet-location
+com.apple.file-server:
+- public.storage
+com.apple.file-system-plug-in:
+- com.apple.plugin
+com.apple.file-vault: []
+com.apple.finalcutpro.colorboard:
+- com.apple.axel
+- public.xml
+com.apple.finalcutpro.dest:
+- public.data
+com.apple.finalcutpro.effectspreset:
+- public.data
+com.apple.finalcutpro.flexolibrary:
+- public.data
+com.apple.finalcutpro.xml:
+- public.xml
+com.apple.finalcutprocache:
+- com.apple.package
+com.apple.finalcutproevent:
+- public.data
+com.apple.finalcutprolibrary:
+- com.apple.package
+com.apple.finalcutproproject:
+- public.data
+com.apple.finder.burn-folder:
+- public.folder
+com.apple.finder.clipping:
+- public.data
+com.apple.finder.file-or-folder-object:
+- com.apple.applescript.object
+com.apple.finder.pictclipping:
+- com.apple.finder.clipping
+- public.data
+- public.image
+- public.item
+com.apple.finder.predefined-search:
+- com.apple.localizable-name-bundle
+- com.apple.package
+com.apple.finder.recent-items:
+- com.apple.finder.smart-folder
+com.apple.finder.smart-folder:
+- public.data
+com.apple.finder.sound-clipping:
+- com.apple.finder.clipping
+com.apple.finder.textclipping:
+- com.apple.finder.clipping
+- public.data
+- public.item
 com.apple.flat-rtfd:
 - public.composite-content
 - public.data
 com.apple.font-suitcase:
 - public.font
+com.apple.fontbook.font-collection-object:
+- com.apple.applescript.object
+com.apple.fontbook.typeface-object:
+- com.apple.applescript.object
 com.apple.framework:
 - com.apple.bundle
+com.apple.ftp-internet-location:
+- com.apple.internet-location
+com.apple.garageband.project:
+- com.apple.package
+- public.audiovisual-content
+com.apple.generic-airdisk:
+- public.storage
+com.apple.generic-bundle:
+- com.apple.bundle
+- com.apple.package
+com.apple.generic-internet-location:
+- com.apple.internet-location
+com.apple.generic-stationery:
+- public.data
+com.apple.generic-time-machine-disk:
+- public.storage
+com.apple.gpurestart:
+- public.log
+- public.utf8-plain-text
+com.apple.gputools.gputrace:
+- com.apple.package
+com.apple.groups-folder:
+- public.folder
+com.apple.guest-user:
+- com.apple.user
+com.apple.hangreport:
+- public.log
+- public.utf8-plain-text
+com.apple.haptics.ahap:
+- public.haptics-content
+- public.json
+com.apple.help-document:
+- public.data
+com.apple.home-folder:
+- public.folder
+com.apple.homebuttonless-device: []
+com.apple.homebuttonless-ipad:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.homebuttonless-iphone:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.homepod:
+- com.apple.ios-device
+- public.speaker
+com.apple.homepod-1:
+- com.apple.homepod
+- com.apple.ios-device
+- public.speaker
+com.apple.homepod-2:
+- com.apple.homepod
+- com.apple.ios-device
+- public.speaker
+com.apple.homepod-mini-1:
+- com.apple.homepod
+- com.apple.ios-device
+- public.speaker
+com.apple.homepod-mini-2:
+- com.apple.homepod
+- com.apple.ios-device
+- public.speaker
+com.apple.ibook-g4:
+- com.apple.mac.laptop
+com.apple.ibooks:
+- org.idpf.epub-container
+com.apple.ibooks-container:
+- public.composite-content
+- public.data
+com.apple.ibooks-folder:
+- com.apple.package
+- public.composite-content
+com.apple.ibooks.epub:
+- com.apple.package
+- public.composite-content
+com.apple.ibooksauthor.book:
+- com.pkware.zip-archive
+- public.composite-content
+- public.data
+- public.zip-archive
+com.apple.ibooksauthor.pkgbook:
+- com.apple.package
+- public.composite-content
+com.apple.ibooksauthor.pkgtemplate:
+- com.apple.package
+- public.composite-content
+com.apple.ibooksauthor.template:
+- public.composite-content
+- public.data
+com.apple.ical.backup:
+- public.data
+- public.item
+com.apple.ical.calendar-object:
+- com.apple.ical.item-object
+com.apple.ical.event-object:
+- com.apple.ical.item-object
+com.apple.ical.ics:
+- public.calendar-event
+- public.data
+- public.item
+- public.text
+com.apple.ical.ics.event:
+- com.apple.ical.ics
+com.apple.ical.ics.todo:
+- com.apple.ical.ics
+com.apple.ical.item-object:
+- com.apple.applescript.object
+com.apple.ical.todo-object:
+- com.apple.ical.item-object
+com.apple.ical.vcs:
+- public.calendar-event
+- public.data
+- public.item
+- public.text
+com.apple.icloud:
+- public.item
+com.apple.icloud-file-fault:
+- com.apple.resolvable
+- public.data
 com.apple.icns:
 - public.image
+com.apple.icon-decoration: []
+com.apple.icon-decoration-position: []
+com.apple.icon-decoration-position.center:
+- com.apple.icon-decoration-position
+com.apple.icon-decoration-position.leading-bottom:
+- com.apple.icon-decoration-position
+com.apple.icon-decoration-position.overlay:
+- com.apple.icon-decoration-position
+com.apple.icon-decoration-position.trailing-bottom:
+- com.apple.icon-decoration-position
+com.apple.icon-decoration.badge:
+- com.apple.icon-decoration
+- com.apple.icon-decoration-position.trailing-bottom
+com.apple.icon-decoration.badge.checkmark:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.comments:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.drop-folder:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.heart:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.in-review:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.locked:
+- com.apple.icon-decoration-position.leading-bottom
+- com.apple.icon-decoration.system
+com.apple.icon-decoration.badge.locked-by-collaborator:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.locked-by-user:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.pinned:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.private-folder:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.syncing:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.trending:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.badge.warning:
+- com.apple.icon-decoration-position.trailing-bottom
+- com.apple.icon-decoration.badge
+com.apple.icon-decoration.emboss:
+- com.apple.icon-decoration
+- com.apple.icon-decoration-position.center
+com.apple.icon-decoration.system:
+- com.apple.icon-decoration
+com.apple.icon-decoration.system.alias:
+- com.apple.icon-decoration.system
+com.apple.icon-decoration.system.caution-alert:
+- com.apple.icon-decoration.system
+com.apple.icon-decoration.system.new-folder:
+- com.apple.icon-decoration.system
+com.apple.icon-decoration.system.unsupported:
+- com.apple.icon-decoration.system
+com.apple.icon-overlay.alert-caution-badge:
+- com.apple.document-type
+com.apple.icon-overlay.alias-badge:
+- com.apple.document-type
+com.apple.icon-overlay.drop-folder-badge:
+- com.apple.document-type
+com.apple.icon-overlay.locked-badge:
+- com.apple.document-type
+com.apple.icon-overlay.new-folder-badge:
+- com.apple.document-type
+com.apple.icon-overlay.private-folder:
+- com.apple.document-type
+com.apple.icon-overlay.private-folder-badge:
+- com.apple.document-type
+com.apple.icon-overlay.unsupported-badge:
+- com.apple.document-type
+com.apple.iconset:
+- public.folder
+com.apple.idisk: []
+com.apple.idvd.item-object:
+- com.apple.applescript.object
+com.apple.idvd.menu-object:
+- com.apple.idvd.item-object
+com.apple.idvd.slideshow-object:
+- com.apple.idvd.item-object
+com.apple.iig-source:
+- public.c-source
+com.apple.ilifemediabrowser.plugin:
+- com.apple.plugin
+com.apple.imac:
+- com.apple.mac
+com.apple.imac-15-1:
+- com.apple.imac-unibody-27-no-optical
+com.apple.imac-2021:
+- com.apple.imac
+com.apple.imac-2021-blue:
+- com.apple.imac-2021
+com.apple.imac-2021-green:
+- com.apple.imac-2021
+com.apple.imac-2021-orange:
+- com.apple.imac-2021
+com.apple.imac-2021-purple:
+- com.apple.imac-2021
+com.apple.imac-2021-red:
+- com.apple.imac-2021
+com.apple.imac-2021-silver:
+- com.apple.imac-2021
+com.apple.imac-2021-yellow:
+- com.apple.imac-2021
+com.apple.imac-aluminum-20:
+- com.apple.imac
+com.apple.imac-aluminum-24:
+- com.apple.imac
+com.apple.imac-core-2-duo:
+- com.apple.imac
+com.apple.imac-core-duo:
+- com.apple.imac
+com.apple.imac-g4-15:
+- com.apple.imac
+com.apple.imac-g4-17:
+- com.apple.imac
+com.apple.imac-g4-20:
+- com.apple.imac
+com.apple.imac-g5:
+- com.apple.imac
+com.apple.imac-g5-isight:
+- com.apple.imac
+com.apple.imac-isight-24:
+- com.apple.imac
+com.apple.imac-unibody:
+- com.apple.imac
+com.apple.imac-unibody-21:
+- com.apple.imac
+com.apple.imac-unibody-21-no-optical:
+- com.apple.imac
+com.apple.imac-unibody-21-no-optical-2017:
+- com.apple.imac-unibody-21-no-optical
+com.apple.imac-unibody-21-no-optical-2019:
+- com.apple.imac-unibody-21-no-optical
+com.apple.imac-unibody-21-no-optical.mid-2015:
+- com.apple.imac-unibody-21-no-optical
+com.apple.imac-unibody-27-no-optical:
+- com.apple.imac
+com.apple.imac-unibody-27-no-optical-2017:
+- com.apple.imac-unibody-27-no-optical
+com.apple.imac-unibody-27-no-optical-2019:
+- com.apple.imac-unibody-27-no-optical
+com.apple.imac-unibody-27-no-optical-2020:
+- com.apple.imac-unibody-27-no-optical
+com.apple.imac-unibody-27-no-optical-late-2015:
+- com.apple.imac-unibody-27-no-optical
+com.apple.imacpro-2017:
+- com.apple.imac
+com.apple.imovielibrary:
+- com.apple.package
+com.apple.imovietheater:
+- com.apple.package
 com.apple.ink.inktext:
 - public.data
+com.apple.installer-distribution-package:
+- com.apple.bundle
+- com.apple.package
+com.apple.installer-meta-package:
+- com.apple.bundle
+- com.apple.package
+com.apple.installer-package:
+- com.apple.bundle
+- com.apple.package
+com.apple.installer-package-archive:
+- public.archive
+- public.data
+com.apple.instruments.instrdst:
+- com.apple.package
+com.apple.instruments.package-definition:
+- public.xml
+com.apple.instruments.prototrace:
+- public.xml
+com.apple.instruments.trace:
+- com.apple.package
+com.apple.instruments.tracetemplate:
+- public.data
+com.apple.intelligentsuggestions.assets:
+- com.apple.bundle
+- com.apple.package
+com.apple.interfacebuilder.document:
+- com.apple.package
+com.apple.interfacebuilder.document.cocoa:
+- public.xml
+com.apple.interfacebuilder.plugin:
+- com.apple.package
+com.apple.internet-location:
+- public.data
+- public.stored-url
+com.apple.ios-device:
+- com.apple.device
+com.apple.ios-simulator:
+- com.apple.ios-device
+com.apple.ipad:
+- com.apple.ios-device
+- public.device
+com.apple.ipad-2-black:
+- com.apple.ipad
+com.apple.ipad-2-cdma-black:
+- com.apple.ipad
+com.apple.ipad-2-cdma-white:
+- com.apple.ipad
+com.apple.ipad-2-gsm-black:
+- com.apple.ipad
+com.apple.ipad-2-gsm-white:
+- com.apple.ipad
+com.apple.ipad-2-white:
+- com.apple.ipad
+com.apple.ipad-2a-black:
+- com.apple.ipad
+com.apple.ipad-2a-white:
+- com.apple.ipad
+com.apple.ipad-3-4g-cdma-black:
+- com.apple.ipad
+com.apple.ipad-3-4g-cdma-white:
+- com.apple.ipad
+com.apple.ipad-3-4g-gsm-black:
+- com.apple.ipad
+com.apple.ipad-3-4g-gsm-white:
+- com.apple.ipad
+com.apple.ipad-3-black:
+- com.apple.ipad
+com.apple.ipad-3-white:
+- com.apple.ipad
+com.apple.ipad-4-a1458-black:
+- com.apple.ipad
+com.apple.ipad-4-a1458-white:
+- com.apple.ipad
+com.apple.ipad-4-a1459-black:
+- com.apple.ipad
+com.apple.ipad-4-a1459-white:
+- com.apple.ipad
+com.apple.ipad-4-a1460-black:
+- com.apple.ipad
+com.apple.ipad-4-a1460-white:
+- com.apple.ipad
+com.apple.ipad-6-a1893-1:
+- com.apple.ipad
+com.apple.ipad-6-a1893-2:
+- com.apple.ipad
+com.apple.ipad-6-a1893-3:
+- com.apple.ipad
+com.apple.ipad-6-a1954-1:
+- com.apple.ipad
+com.apple.ipad-6-a1954-2:
+- com.apple.ipad
+com.apple.ipad-6-a1954-3:
+- com.apple.ipad
+com.apple.ipad-7-wifi-1:
+- com.apple.ipad
+com.apple.ipad-7-wifi-2:
+- com.apple.ipad
+com.apple.ipad-7-wifi-3:
+- com.apple.ipad
+com.apple.ipad-7-wwan-1:
+- com.apple.ipad
+com.apple.ipad-7-wwan-2:
+- com.apple.ipad
+com.apple.ipad-7-wwan-3:
+- com.apple.ipad
+com.apple.ipad-8-wifi-1:
+- com.apple.ipad
+com.apple.ipad-8-wifi-2:
+- com.apple.ipad
+com.apple.ipad-8-wifi-3:
+- com.apple.ipad
+com.apple.ipad-8-wwan-1:
+- com.apple.ipad
+com.apple.ipad-8-wwan-2:
+- com.apple.ipad
+com.apple.ipad-8-wwan-3:
+- com.apple.ipad
+com.apple.ipad-air-a1474-99989b:
+- com.apple.ipad
+com.apple.ipad-air-a1474-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-air-a1475-99989b:
+- com.apple.ipad
+com.apple.ipad-air-a1475-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-air-a1476-99989b:
+- com.apple.ipad
+com.apple.ipad-air-a1476-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-air2-a1566-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-air2-a1566-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-air2-a1566-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-air2-a1567-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-air2-a1567-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-air2-a1567-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-air3-wifi-1:
+- com.apple.ipad
+com.apple.ipad-air3-wifi-2:
+- com.apple.ipad
+com.apple.ipad-air3-wifi-3:
+- com.apple.ipad
+com.apple.ipad-air3-wwan-1:
+- com.apple.ipad
+com.apple.ipad-air3-wwan-2:
+- com.apple.ipad
+com.apple.ipad-air3-wwan-3:
+- com.apple.ipad
+com.apple.ipad-air4-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-air4-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-air4-3:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-air4-4:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-air4-5:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-gen5-a1822-1:
+- com.apple.ipad
+com.apple.ipad-gen5-a1822-2:
+- com.apple.ipad
+com.apple.ipad-gen5-a1822-3:
+- com.apple.ipad
+com.apple.ipad-gen5-a1823-1:
+- com.apple.ipad
+com.apple.ipad-gen5-a1823-2:
+- com.apple.ipad
+com.apple.ipad-gen5-a1823-3:
+- com.apple.ipad
+com.apple.ipad-mini-3g-a1454-black:
+- com.apple.ipad
+com.apple.ipad-mini-3g-a1454-white:
+- com.apple.ipad
+com.apple.ipad-mini-3g-a1455-black:
+- com.apple.ipad
+com.apple.ipad-mini-3g-a1455-white:
+- com.apple.ipad
+com.apple.ipad-mini-black:
+- com.apple.ipad
+com.apple.ipad-mini-white:
+- com.apple.ipad
+com.apple.ipad-mini2-a1489-99989b:
+- com.apple.ipad
+com.apple.ipad-mini2-a1489-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini2-a1490-99989b:
+- com.apple.ipad
+com.apple.ipad-mini2-a1490-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini2-a1491-99989b:
+- com.apple.ipad
+com.apple.ipad-mini2-a1491-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini3-a1599-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-mini3-a1599-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini3-a1599-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-mini3-a1600-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-mini3-a1600-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini3-a1600-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-mini3-a1601-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-mini3-a1601-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini3-a1601-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-mini4-a1538-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-mini4-a1538-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini4-a1538-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-mini4-a1550-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-mini4-a1550-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-mini4-a1550-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-mini5-wifi-1:
+- com.apple.ipad
+com.apple.ipad-mini5-wifi-2:
+- com.apple.ipad
+com.apple.ipad-mini5-wifi-3:
+- com.apple.ipad
+com.apple.ipad-mini5-wwan-1:
+- com.apple.ipad
+com.apple.ipad-mini5-wwan-2:
+- com.apple.ipad
+com.apple.ipad-mini5-wwan-3:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1701-1:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1701-2:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1701-3:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1701-4:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1709-1:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1709-2:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1709-3:
+- com.apple.ipad
+com.apple.ipad-pro-10point5-a1709-4:
+- com.apple.ipad
+com.apple.ipad-pro-11-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-11-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-11-2nd-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-11-2nd-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-11-3rd-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-11-3rd-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-12point9-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-12point9-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-12point9-4th-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-12point9-4th-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-12point9-5th-1:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-12point9-5th-2:
+- com.apple.homebuttonless-device
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1673-b9b7ba:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1673-dadcdb:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1673-e1ccb7:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1673-e4c1b9:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1674-b9b7ba:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1674-dadcdb:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1674-e1ccb7:
+- com.apple.ipad
+com.apple.ipad-pro-9point7-a1674-e4c1b9:
+- com.apple.ipad
+com.apple.ipad-pro-a1584-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-pro-a1584-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-pro-a1584-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-pro-a1652-b4b5b9:
+- com.apple.ipad
+com.apple.ipad-pro-a1652-d7d9d8:
+- com.apple.ipad
+com.apple.ipad-pro-a1652-e1ccb5:
+- com.apple.ipad
+com.apple.ipad-pro-a1670-1:
+- com.apple.ipad
+com.apple.ipad-pro-a1670-2:
+- com.apple.ipad
+com.apple.ipad-pro-a1670-3:
+- com.apple.ipad
+com.apple.ipad-pro-a1821-1:
+- com.apple.ipad
+com.apple.ipad-pro-a1821-2:
+- com.apple.ipad
+com.apple.ipad-pro-a1821-3:
+- com.apple.ipad
+com.apple.iphone:
+- com.apple.ios-device
+- public.device
+com.apple.iphone-11-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-11:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-12:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-6:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-7:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-12:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-4:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-max-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-max-12:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-max-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-11-pro-max-4:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-18:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-6:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-9:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-mini-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-mini-18:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-mini-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-mini-6:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-mini-9:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-3:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-9:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-max-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-max-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-max-3:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-12-pro-max-9:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-3g:
+- com.apple.iphone
+com.apple.iphone-3gs:
+- com.apple.iphone
+com.apple.iphone-4:
+- com.apple.iphone
+com.apple.iphone-4-black:
+- com.apple.iphone
+com.apple.iphone-4-cdma-black:
+- com.apple.iphone
+com.apple.iphone-4-cdma-white:
+- com.apple.iphone
+com.apple.iphone-4-white:
+- com.apple.iphone
+com.apple.iphone-4b-black:
+- com.apple.iphone
+com.apple.iphone-4b-white:
+- com.apple.iphone
+com.apple.iphone-4s-black:
+- com.apple.iphone
+com.apple.iphone-4s-white:
+- com.apple.iphone
+com.apple.iphone-5-a1428-3b3b3c:
+- com.apple.iphone
+com.apple.iphone-5-a1428-black:
+- com.apple.iphone
+com.apple.iphone-5-a1428-e1e4e3:
+- com.apple.iphone
+com.apple.iphone-5-a1428-white:
+- com.apple.iphone
+com.apple.iphone-5-a1429-3b3b3c:
+- com.apple.iphone
+com.apple.iphone-5-a1429-black:
+- com.apple.iphone
+com.apple.iphone-5-a1429-e1e4e3:
+- com.apple.iphone
+com.apple.iphone-5-a1429-white:
+- com.apple.iphone
+com.apple.iphone-5c-a1456-46abe0:
+- com.apple.iphone
+com.apple.iphone-5c-a1456-a1e877:
+- com.apple.iphone
+com.apple.iphone-5c-a1456-f5f4f7:
+- com.apple.iphone
+com.apple.iphone-5c-a1456-faf189:
+- com.apple.iphone
+com.apple.iphone-5c-a1456-fe767a:
+- com.apple.iphone
+com.apple.iphone-5c-a1507-46abe0:
+- com.apple.iphone
+com.apple.iphone-5c-a1507-a1e877:
+- com.apple.iphone
+com.apple.iphone-5c-a1507-f5f4f7:
+- com.apple.iphone
+com.apple.iphone-5c-a1507-faf189:
+- com.apple.iphone
+com.apple.iphone-5c-a1507-fe767a:
+- com.apple.iphone
+com.apple.iphone-5s-a1453-99989b:
+- com.apple.iphone
+com.apple.iphone-5s-a1453-d4c5b3:
+- com.apple.iphone
+com.apple.iphone-5s-a1453-d7d9d8:
+- com.apple.iphone
+com.apple.iphone-5s-a1457-99989b:
+- com.apple.iphone
+com.apple.iphone-5s-a1457-d4c5b3:
+- com.apple.iphone
+com.apple.iphone-5s-a1457-d7d9d8:
+- com.apple.iphone
+com.apple.iphone-6-b4b5b9:
+- com.apple.iphone
+com.apple.iphone-6-d7d9d8:
+- com.apple.iphone
+com.apple.iphone-6-e1ccb5:
+- com.apple.iphone
+com.apple.iphone-6-plus-b4b5b9:
+- com.apple.iphone
+com.apple.iphone-6-plus-d7d9d8:
+- com.apple.iphone
+com.apple.iphone-6-plus-e1ccb5:
+- com.apple.iphone
+com.apple.iphone-6s-b9b7ba:
+- com.apple.iphone
+com.apple.iphone-6s-dadcdb:
+- com.apple.iphone
+com.apple.iphone-6s-e1ccb7:
+- com.apple.iphone
+com.apple.iphone-6s-e4c1b9:
+- com.apple.iphone
+com.apple.iphone-6s-plus-b9b7ba:
+- com.apple.iphone
+com.apple.iphone-6s-plus-dadcdb:
+- com.apple.iphone
+com.apple.iphone-6s-plus-e1ccb7:
+- com.apple.iphone
+com.apple.iphone-6s-plus-e4c1b9:
+- com.apple.iphone
+com.apple.iphone-7-1:
+- com.apple.iphone
+com.apple.iphone-7-2:
+- com.apple.iphone
+com.apple.iphone-7-3:
+- com.apple.iphone
+com.apple.iphone-7-4:
+- com.apple.iphone
+com.apple.iphone-7-5:
+- com.apple.iphone
+com.apple.iphone-7-6:
+- com.apple.iphone
+com.apple.iphone-7-plus-1:
+- com.apple.iphone
+com.apple.iphone-7-plus-2:
+- com.apple.iphone
+com.apple.iphone-7-plus-3:
+- com.apple.iphone
+com.apple.iphone-7-plus-4:
+- com.apple.iphone
+com.apple.iphone-7-plus-5:
+- com.apple.iphone
+com.apple.iphone-7-plus-6:
+- com.apple.iphone
+com.apple.iphone-8:
+- com.apple.iphone
+com.apple.iphone-8-2:
+- com.apple.iphone
+- com.apple.iphone-8
+com.apple.iphone-8-6:
+- com.apple.iphone
+com.apple.iphone-8-7:
+- com.apple.iphone
+- com.apple.iphone-8
+com.apple.iphone-8-8:
+- com.apple.iphone
+- com.apple.iphone-8
+com.apple.iphone-8-plus:
+- com.apple.iphone
+com.apple.iphone-8-plus-1:
+- com.apple.iphone
+- com.apple.iphone-8-plus
+com.apple.iphone-8-plus-2:
+- com.apple.iphone
+- com.apple.iphone-8-plus
+com.apple.iphone-8-plus-3:
+- com.apple.iphone
+- com.apple.iphone-8-plus
+com.apple.iphone-8-plus-6:
+- com.apple.iphone
+com.apple.iphone-se-1:
+- com.apple.iphone
+com.apple.iphone-se-2:
+- com.apple.iphone
+com.apple.iphone-se-6:
+- com.apple.iphone
+com.apple.iphone-se-a1662-aeb1b8:
+- com.apple.iphone
+com.apple.iphone-se-a1662-d6c8b9:
+- com.apple.iphone
+com.apple.iphone-se-a1662-dcdede:
+- com.apple.iphone
+com.apple.iphone-se-a1662-e5bdb5:
+- com.apple.iphone
+com.apple.iphone-x:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-x-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+- com.apple.iphone-x
+com.apple.iphone-x-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+- com.apple.iphone-x
+com.apple.iphone-xr-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xr-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xr-6:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xr-7:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xr-8:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xr-9:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xs-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xs-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xs-4:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xs-max-1:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xs-max-2:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone-xs-max-4:
+- com.apple.homebuttonless-device
+- com.apple.iphone
+com.apple.iphone.developerprofile:
+- public.data
+com.apple.iphone.ipsw:
+- public.content
+- public.data
+com.apple.iphoto.album-object:
+- com.apple.iphoto.item-object
+com.apple.iphoto.ipmeta:
+- public.data
+com.apple.iphoto.ipspot:
+- public.data
+com.apple.iphoto.item-object:
+- com.apple.applescript.object
+com.apple.iphoto.photo-object:
+- com.apple.iphoto.item-object
+com.apple.ipod:
+- com.apple.ios-device
+- public.device
+com.apple.ipod-classic:
+- com.apple.legacy-ipod
+com.apple.ipod-mini:
+- com.apple.legacy-ipod
+com.apple.ipod-nano:
+- com.apple.legacy-ipod
+com.apple.ipod-shuffle:
+- com.apple.legacy-ipod
+com.apple.ipod-shuffle-gen1:
+- com.apple.ipod-shuffle
+com.apple.ipod-shuffle-gen2:
+- com.apple.ipod-shuffle
+com.apple.ipod-shuffle-gen3:
+- com.apple.ipod-shuffle
+com.apple.ipod-shuffle-gen4:
+- com.apple.ipod-shuffle
+com.apple.ipod-touch:
+- com.apple.ipod
+com.apple.ipod-touch-2:
+- com.apple.ipod
+com.apple.ipod-touch-3:
+- com.apple.ipod
+com.apple.ipod-touch-4:
+- com.apple.ipod
+com.apple.ipod-touch-4-black:
+- com.apple.ipod
+com.apple.ipod-touch-4-white:
+- com.apple.ipod
+com.apple.ipod-touch-5-blue:
+- com.apple.ipod
+com.apple.ipod-touch-5-pink:
+- com.apple.ipod
+com.apple.ipod-touch-5-red:
+- com.apple.ipod
+com.apple.ipod-touch-5-silver:
+- com.apple.ipod
+com.apple.ipod-touch-5-slate:
+- com.apple.ipod
+com.apple.ipod-touch-5-sparrow:
+- com.apple.ipod
+com.apple.ipod-touch-5-white:
+- com.apple.ipod
+com.apple.ipod-touch-5-yellow:
+- com.apple.ipod
+com.apple.ipod-touch-6-458dce:
+- com.apple.ipod
+com.apple.ipod-touch-6-6b6a6d:
+- com.apple.ipod
+com.apple.ipod-touch-6-c6353f:
+- com.apple.ipod
+com.apple.ipod-touch-6-dadcdb:
+- com.apple.ipod
+com.apple.ipod-touch-6-e1ccb7:
+- com.apple.ipod
+com.apple.ipod-touch-6-e75090:
+- com.apple.ipod
+com.apple.ipod-touch-7-2:
+- com.apple.ipod
+com.apple.ipod-touch-7-3:
+- com.apple.ipod
+com.apple.ipod-touch-7-4:
+- com.apple.ipod
+com.apple.ipod-touch-7-5:
+- com.apple.ipod
+com.apple.ipod-touch-7-6:
+- com.apple.ipod
+com.apple.ipod-touch-7-9:
+- com.apple.ipod
+com.apple.ips:
+- public.text
+com.apple.itunes.db:
+- public.data
+- public.database
+com.apple.itunes.ipa:
+- public.data
+- public.executable
+com.apple.itunes.ipsw:
+- public.data
+- public.executable
+com.apple.itunes.item-object:
+- com.apple.applescript.object
+com.apple.itunes.playlist-object:
+- com.apple.itunes.item-object
+com.apple.itunes.source-object:
+- com.apple.itunes.item-object
+com.apple.itunes.store-url:
+- public.url
+com.apple.itunes.track-object:
+- com.apple.itunes.item-object
+com.apple.iwork.keynote.key:
+- com.apple.keynote.key
+- com.apple.package
+- public.presentation
+com.apple.iwork.keynote.key-tef:
+- com.apple.keynote.key
+- com.apple.package
+- public.presentation
+com.apple.iwork.keynote.kpdc:
+- com.apple.property-list
+com.apple.iwork.keynote.kpf:
+- com.apple.package
+- public.presentation
+com.apple.iwork.keynote.kth:
+- com.apple.keynote.kth
+- com.apple.package
+- public.composite-content
+- public.presentation
+com.apple.iwork.keynote.sffkey:
+- public.data
+- public.presentation
+com.apple.iwork.keynote.sffkth:
+- public.composite-content
+- public.data
+- public.presentation
+com.apple.iwork.numbers.numbers:
+- com.apple.package
+- public.composite-content
+- public.spreadsheet
+com.apple.iwork.numbers.numbers-tef:
+- com.apple.package
+- public.composite-content
+- public.spreadsheet
+com.apple.iwork.numbers.sffnumbers:
+- public.composite-content
+- public.data
+- public.spreadsheet
+com.apple.iwork.numbers.sfftemplate:
+- public.composite-content
+- public.data
+- public.spreadsheet
+com.apple.iwork.numbers.template:
+- com.apple.package
+- public.composite-content
+- public.spreadsheet
+com.apple.iwork.pages.pages:
+- com.apple.package
+- public.composite-content
+com.apple.iwork.pages.pages-tef:
+- com.apple.package
+- public.composite-content
+com.apple.iwork.pages.sffpages:
+- public.composite-content
+- public.data
+com.apple.iwork.pages.sfftemplate:
+- public.composite-content
+- public.data
+com.apple.iwork.pages.template:
+- com.apple.package
+- public.composite-content
+com.apple.kernel-extension:
+- com.apple.bundle
+- com.apple.package
+com.apple.keychain:
+- public.data
+com.apple.keynote.key:
+- com.apple.package
+- public.presentation
+com.apple.keynote.kth:
+- com.apple.package
+- public.presentation
+com.apple.ktrace:
+- public.data
+- public.log
+com.apple.led-cinema-display-24:
+- public.display
+com.apple.led-cinema-display-27:
+- public.display
+com.apple.legacy-ipod:
+- com.apple.device
+com.apple.legacy.actions-icon:
+- com.apple.document-type
+com.apple.legacy.backward-arrow:
+- com.apple.document-type
+com.apple.legacy.burn:
+- com.apple.document-type
+com.apple.legacy.clock-icon:
+- com.apple.document-type
+com.apple.legacy.connect-to:
+- com.apple.document-type
+com.apple.legacy.customize-toolbar:
+- com.apple.document-type
+com.apple.legacy.delete-toolbar:
+- com.apple.document-type
+com.apple.legacy.eject-media:
+- com.apple.document-type
+com.apple.legacy.erasing:
+- com.apple.document-type
+com.apple.legacy.favorite-items:
+- com.apple.document-type
+com.apple.legacy.finder-icon:
+- com.apple.document-type
+com.apple.legacy.forward-arrow:
+- com.apple.document-type
+com.apple.legacy.general-icon:
+- com.apple.document-type
+com.apple.legacy.grid:
+- com.apple.document-type
+com.apple.legacy.keep-arranged:
+- com.apple.document-type
+com.apple.legacy.locked:
+- com.apple.document-type
+com.apple.legacy.magnifying-glass:
+- com.apple.document-type
+com.apple.legacy.multiple-items:
+- com.apple.document-type
+com.apple.legacy.no-write:
+- com.apple.document-type
+com.apple.legacy.open-folder:
+- com.apple.document-type
+com.apple.legacy.question-mark:
+- com.apple.document-type
+com.apple.legacy.right-container-arrow:
+- com.apple.document-type
+com.apple.legacy.sidebar-prefs-icon:
+- com.apple.document-type
+com.apple.legacy.synchronize:
+- com.apple.document-type
+com.apple.legacy.toolbar-advanced-icon:
+- com.apple.document-type
+com.apple.legacy.toolbar-info-icon:
+- com.apple.document-type
+com.apple.legacy.toolbar-labels-icon:
+- com.apple.document-type
+com.apple.legacy.unlocked:
+- com.apple.document-type
+com.apple.legacy.window:
+- com.apple.document-type
+com.apple.library-folder:
+- public.folder
+com.apple.live-photo: []
+com.apple.live-photo-bundle: []
+com.apple.localizable-name-bundle:
+- com.apple.bundle
+com.apple.localized-pdf-bundle:
+- com.apple.localizable-name-bundle
+- com.apple.package
+- public.composite-content
+com.apple.log:
+- public.log
+- public.plain-text
+com.apple.logarchive:
+- com.apple.package
+- public.composite-content
+com.apple.logic-song:
+- public.audiovisual-content
+- public.data
+com.apple.logic.channelstripsetting:
+- public.audiovisual-content
+- public.data
+com.apple.logic.dpst:
+- public.audiovisual-content
+- public.data
+com.apple.logic.drummerlibrary:
+- com.apple.package
+- public.audiovisual-content
+com.apple.logic.exs:
+- public.audiovisual-content
+- public.data
+com.apple.logic.gchdb:
+- com.apple.package
+- public.audiovisual-content
+com.apple.logic.impulseresponse:
+- public.audio
+- public.audiovisual-content
+- public.data
+com.apple.logic.impulseresponseproject:
+- com.apple.package
+com.apple.logic.keycommand:
+- public.audiovisual-content
+- public.data
+com.apple.logic.notator:
+- public.audiovisual-content
+- public.data
+com.apple.logic.pluginsetting:
+- public.audiovisual-content
+- public.data
+com.apple.logic.project:
+- com.apple.package
+- public.audiovisual-content
+com.apple.logic.recycle:
+- public.data
+com.apple.logic.rex:
+- public.data
+com.apple.logic.rex2:
+- public.data
+com.apple.logicx.gridsetting:
+- com.apple.package
+- public.audiovisual-content
+com.apple.logicx.project:
+- com.apple.package
+- public.audiovisual-content
+- public.content
+- public.data
+com.apple.lsr-image:
+- public.image
+com.apple.m4a-audio:
+- public.mpeg-4-audio
+com.apple.m4v-video:
+- public.mpeg-4
+com.apple.mac:
+- com.apple.device
+- public.computer
+com.apple.mac.laptop:
+- com.apple.mac
+com.apple.mac.rackmount:
+- com.apple.mac
+com.apple.mac.tower:
+- com.apple.mac
 com.apple.macbinary-archive:
 - public.archive
 - public.data
+com.apple.macbook:
+- com.apple.mac.laptop
+com.apple.macbook-black:
+- com.apple.macbook
+com.apple.macbook-retina:
+- com.apple.macbook
+com.apple.macbook-retina-gold:
+- com.apple.macbook-retina
+com.apple.macbook-retina-gold-2017:
+- com.apple.macbook-retina-gold
+com.apple.macbook-retina-gold-2018:
+- com.apple.macbook-retina
+com.apple.macbook-retina-rose-gold:
+- com.apple.macbook-retina
+com.apple.macbook-retina-rose-gold-2017:
+- com.apple.macbook-retina-rose-gold
+com.apple.macbook-retina-silver:
+- com.apple.macbook-retina
+com.apple.macbook-retina-silver-2017:
+- com.apple.macbook-retina-silver
+com.apple.macbook-retina-space-gray:
+- com.apple.macbook-retina
+com.apple.macbook-retina-space-gray-2017:
+- com.apple.macbook-retina-space-gray
+com.apple.macbook-unibody:
+- com.apple.macbook
+com.apple.macbook-unibody-plastic:
+- com.apple.macbook
+com.apple.macbook-white:
+- com.apple.macbook
+com.apple.macbookair:
+- com.apple.mac.laptop
+com.apple.macbookair-11-unibody:
+- com.apple.macbookair
+com.apple.macbookair-13-unibody:
+- com.apple.macbookair
+com.apple.macbookair-2018:
+- com.apple.macbookair
+com.apple.macbookair-2018-gold:
+- com.apple.macbookair-2018
+com.apple.macbookair-2018-silver:
+- com.apple.macbookair-2018
+com.apple.macbookair-2018-space-gray:
+- com.apple.macbookair-2018
+com.apple.macbookair-2019:
+- com.apple.macbookair-2018
+com.apple.macbookair-2019-gold:
+- com.apple.macbookair-2018-gold
+com.apple.macbookair-2019-silver:
+- com.apple.macbookair-2018-silver
+com.apple.macbookair-2019-space-gray:
+- com.apple.macbookair-2018-space-gray
+com.apple.macbookair-2020:
+- com.apple.macbookair-2019
+com.apple.macbookair-2020-gold:
+- com.apple.macbookair-2019-gold
+com.apple.macbookair-2020-silver:
+- com.apple.macbookair-2019-silver
+com.apple.macbookair-2020-space-gray:
+- com.apple.macbookair-2019-space-gray
+com.apple.macbookair-late-2020:
+- com.apple.macbookair-2020
+com.apple.macbookair-late-2020-gold:
+- com.apple.macbookair-2020-gold
+- com.apple.macbookair-late-2020
+com.apple.macbookair-late-2020-silver:
+- com.apple.macbookair-2020-silver
+- com.apple.macbookair-late-2020
+com.apple.macbookair-late-2020-space-gray:
+- com.apple.macbookair-2020-space-gray
+- com.apple.macbookair-late-2020
+com.apple.macbookpro:
+- com.apple.mac.laptop
+com.apple.macbookpro-13-retina-display:
+- com.apple.macbookpro
+com.apple.macbookpro-13-retina-four-usb-ports-2020:
+- com.apple.macbookpro-13-retina-touchid
+com.apple.macbookpro-13-retina-four-usb-ports-silver-2020:
+- com.apple.macbookpro-13-retina-four-usb-ports-2020
+- com.apple.macbookpro-13-retina-touchid-silver
+com.apple.macbookpro-13-retina-four-usb-ports-space-gray-2020:
+- com.apple.macbookpro-13-retina-four-usb-ports-2020
+- com.apple.macbookpro-13-retina-touchid-space-gray
+com.apple.macbookpro-13-retina-touchid:
+- com.apple.macbookpro
+com.apple.macbookpro-13-retina-touchid-2017:
+- com.apple.macbookpro-13-retina-touchid
+com.apple.macbookpro-13-retina-touchid-2018:
+- com.apple.macbookpro-13-retina-touchid
+com.apple.macbookpro-13-retina-touchid-2020:
+- com.apple.macbookpro-13-retina-touchid
+com.apple.macbookpro-13-retina-touchid-late-2020:
+- com.apple.macbookpro-13-retina-touchid-2020
+com.apple.macbookpro-13-retina-touchid-silver:
+- com.apple.macbookpro-13-retina-touchid
+com.apple.macbookpro-13-retina-touchid-silver-2017:
+- com.apple.macbookpro-13-retina-touchid-silver
+com.apple.macbookpro-13-retina-touchid-silver-2018:
+- com.apple.macbookpro-13-retina-touchid-2018
+- com.apple.macbookpro-13-retina-touchid-silver
+com.apple.macbookpro-13-retina-touchid-silver-2020:
+- com.apple.macbookpro-13-retina-touchid-2020
+- com.apple.macbookpro-13-retina-touchid-silver
+com.apple.macbookpro-13-retina-touchid-silver-late-2020:
+- com.apple.macbookpro-13-retina-touchid-late-2020
+- com.apple.macbookpro-13-retina-touchid-silver-2020
+com.apple.macbookpro-13-retina-touchid-space-gray:
+- com.apple.macbookpro-13-retina-touchid
+com.apple.macbookpro-13-retina-touchid-space-gray-2017:
+- com.apple.macbookpro-13-retina-touchid-space-gray
+com.apple.macbookpro-13-retina-touchid-space-gray-2018:
+- com.apple.macbookpro-13-retina-touchid-2018
+- com.apple.macbookpro-13-retina-touchid-space-gray
+com.apple.macbookpro-13-retina-touchid-space-gray-2020:
+- com.apple.macbookpro-13-retina-touchid-2020
+- com.apple.macbookpro-13-retina-touchid-space-gray
+com.apple.macbookpro-13-retina-touchid-space-gray-late-2020:
+- com.apple.macbookpro-13-retina-touchid-late-2020
+- com.apple.macbookpro-13-retina-touchid-space-gray-2020
+com.apple.macbookpro-13-retina-usbc:
+- com.apple.macbookpro
+com.apple.macbookpro-13-retina-usbc-2017:
+- com.apple.macbookpro-13-retina-usbc
+com.apple.macbookpro-13-retina-usbc-2019:
+- com.apple.macbookpro-13-retina-usbc
+com.apple.macbookpro-13-retina-usbc-silver:
+- com.apple.macbookpro-13-retina-usbc
+com.apple.macbookpro-13-retina-usbc-silver-2017:
+- com.apple.macbookpro-13-retina-usbc-silver
+com.apple.macbookpro-13-retina-usbc-silver-2019:
+- com.apple.macbookpro-13-retina-usbc-2019
+- com.apple.macbookpro-13-retina-usbc-silver
+com.apple.macbookpro-13-retina-usbc-space-gray:
+- com.apple.macbookpro-13-retina-usbc
+com.apple.macbookpro-13-retina-usbc-space-gray-2017:
+- com.apple.macbookpro-13-retina-usbc-space-gray
+com.apple.macbookpro-13-retina-usbc-space-gray-2019:
+- com.apple.macbookpro-13-retina-usbc-2019
+- com.apple.macbookpro-13-retina-usbc-space-gray
+com.apple.macbookpro-13-unibody:
+- com.apple.macbookpro
+com.apple.macbookpro-15:
+- com.apple.macbookpro
+com.apple.macbookpro-15-late-2018:
+- com.apple.macbookpro-15-retina-touchid
+com.apple.macbookpro-15-retina-display:
+- com.apple.macbookpro
+com.apple.macbookpro-15-retina-touchid:
+- com.apple.macbookpro
+com.apple.macbookpro-15-retina-touchid-2017:
+- com.apple.macbookpro-15-retina-touchid
+com.apple.macbookpro-15-retina-touchid-2018:
+- com.apple.macbookpro-15-retina-touchid
+com.apple.macbookpro-15-retina-touchid-silver:
+- com.apple.macbookpro-15-retina-touchid
+com.apple.macbookpro-15-retina-touchid-silver-2017:
+- com.apple.macbookpro-15-retina-touchid-silver
+com.apple.macbookpro-15-retina-touchid-silver-2018:
+- com.apple.macbookpro-15-retina-touchid-2018
+- com.apple.macbookpro-15-retina-touchid-silver
+com.apple.macbookpro-15-retina-touchid-space-gray:
+- com.apple.macbookpro-15-retina-touchid
+com.apple.macbookpro-15-retina-touchid-space-gray-2017:
+- com.apple.macbookpro-15-retina-touchid-space-gray
+com.apple.macbookpro-15-retina-touchid-space-gray-2018:
+- com.apple.macbookpro-15-retina-touchid-2018
+- com.apple.macbookpro-15-retina-touchid-space-gray
+com.apple.macbookpro-15-silver-late-2018:
+- com.apple.macbookpro-15-late-2018
+- com.apple.macbookpro-15-retina-touchid-silver
+com.apple.macbookpro-15-space-gray-late-2018:
+- com.apple.macbookpro-15-late-2018
+- com.apple.macbookpro-15-retina-touchid-space-gray
+com.apple.macbookpro-15-unibody:
+- com.apple.macbookpro
+com.apple.macbookpro-16:
+- com.apple.macbookpro
+com.apple.macbookpro-16-mid-2020:
+- com.apple.macbookpro-16
+com.apple.macbookpro-16-silver:
+- com.apple.macbookpro-16
+com.apple.macbookpro-16-silver-mid-2020:
+- com.apple.macbookpro-16-mid-2020
+- com.apple.macbookpro-16-silver
+com.apple.macbookpro-16-space-gray:
+- com.apple.macbookpro-16
+com.apple.macbookpro-16-space-gray-mid-2020:
+- com.apple.macbookpro-16-mid-2020
+- com.apple.macbookpro-16-space-gray
+com.apple.macbookpro-17:
+- com.apple.macbookpro
+com.apple.macbookpro-17-unibody:
+- com.apple.macbookpro
 com.apple.mach-o-binary:
-- public.data
-- public.executable
+- public.unix-executable
+com.apple.mach-o-bundle:
+- com.apple.mach-o-binary
+com.apple.mach-o-core:
+- com.apple.mach-o-binary
+com.apple.mach-o-dylib:
+- com.apple.mach-o-binary
+com.apple.mach-o-executable:
+- com.apple.mach-o-binary
+com.apple.mach-o-object:
+- com.apple.mach-o-binary
+com.apple.macmini:
+- com.apple.mac
+com.apple.macmini-2018:
+- com.apple.macmini
+com.apple.macmini-2020:
+- com.apple.macmini
+com.apple.macmini-core-duo:
+- com.apple.macmini
+com.apple.macmini-g4:
+- com.apple.macmini
+com.apple.macmini-unibody:
+- com.apple.macmini
+com.apple.macmini-unibody-no-optical:
+- com.apple.macmini
 com.apple.macpaint-image:
 - public.image
+com.apple.macpro:
+- com.apple.mac
+com.apple.macpro-2019:
+- com.apple.mac.tower
+- com.apple.macpro
+com.apple.macpro-2019-rackmount:
+- com.apple.mac.rackmount
+- com.apple.macpro
+com.apple.macpro-cylinder:
+- com.apple.mac.tower
+- com.apple.macpro
+com.apple.macpro-firewire:
+- com.apple.mac.tower
+- com.apple.macpro
+com.apple.mail-internet-location:
+- com.apple.internet-location
+com.apple.mail.account-object:
+- com.apple.mail.item-object
+com.apple.mail.email:
+- public.data
+- public.email-message
+com.apple.mail.emlx:
+- public.data
+- public.email-message
+com.apple.mail.emlx.part:
+- public.data
+com.apple.mail.ewsmbox:
+- public.folder
+com.apple.mail.imapmbox:
+- public.folder
+com.apple.mail.item-object:
+- com.apple.applescript.object
+com.apple.mail.mailbox-object:
+- com.apple.mail.item-object
+com.apple.mail.mbox:
+- public.folder
+com.apple.mail.message-object:
+- com.apple.mail.item-object
+com.apple.mainstage.concert:
+- com.apple.package
+com.apple.mainstage.device:
+- com.apple.package
+com.apple.mainstage.graph:
+- public.data
+com.apple.mainstage.layout:
+- com.apple.package
+com.apple.mainstage.meta:
+- com.apple.package
+com.apple.mainstage.patches:
+- com.apple.localizable-name-bundle
+- com.apple.package
+com.apple.mapkit.map-item:
+- public.data
+com.apple.maps.directionsrequest:
+- public.data
+com.apple.maps.navtracefile:
+- public.data
+com.apple.menu-extra:
+- com.apple.bundle
+- com.apple.package
+com.apple.messages.ckconversation:
+- public.item
 com.apple.metadata-importer:
 - com.apple.plugin
+com.apple.metal:
+- public.source-code
+com.apple.migratedaplibrary:
+- com.apple.package
+com.apple.migratedphotolibrary:
+- com.apple.package
+com.apple.mobileconfig:
+- public.xml
+com.apple.mobileprovision:
+- public.data
+com.apple.motion.destination:
+- public.data
+com.apple.motion.effect:
+- public.data
+- public.item
+- public.movie
+com.apple.motion.project:
+- public.data
+- public.item
+- public.movie
+com.apple.motion.title:
+- public.data
+- public.item
+- public.movie
+com.apple.motion.transition:
+- public.data
+- public.item
+- public.movie
 com.apple.mount-point:
 - com.apple.resolvable
 - public.item
+com.apple.movie-folder:
+- public.folder
+com.apple.mpeg-4-ringtone:
+- public.mpeg-4-audio
+com.apple.music-folder:
+- public.folder
+com.apple.music-video:
+- public.movie
+com.apple.music.cdda:
+- public.audio
+com.apple.music.database:
+- public.data
+- public.database
+com.apple.music.iappurl:
+- public.file-url
+com.apple.music.itlp:
+- com.apple.package
+- public.html
+com.apple.music.itms:
+- public.url
+com.apple.music.library:
+- com.apple.package
+com.apple.music.m3u-playlist:
+- public.playlist
+- public.text
+com.apple.music.metadata:
+- public.xml
+com.apple.music.mp2:
+- public.audio
+com.apple.music.pls-playlist:
+- public.playlist
+- public.text
+com.apple.music.rmp-playlist:
+- public.playlist
+- public.text
+com.apple.music.visual:
+- com.apple.plugin
+com.apple.musicapps.alchemy.analyzedaudio:
+- public.audiovisual-content
+- public.data
+com.apple.musicapps.alchemy.settings:
+- public.audiovisual-content
+- public.data
+com.apple.musicapps.metadata:
+- public.data
+com.apple.musicapps.pattern:
+- com.apple.property-list
+- public.data
+com.apple.musicapps.ultrabeat.sample:
+- public.audio
+com.apple.network-neighborhood: []
+com.apple.news-internet-location:
+- com.apple.internet-location
+com.apple.not-loaded:
+- com.apple.document-type
+com.apple.notes.airdrop.document:
+- public.content
+- public.data
+com.apple.notes.archive:
+- com.apple.package
+- public.composite-content
+com.apple.notes.note:
+- com.apple.package
+- public.composite-content
+com.apple.notes.spotlightrecord:
+- public.content
+- public.data
+com.apple.notifications: []
+com.apple.nspboard-type:
+- public.text
+com.apple.ostype:
+- public.text
+com.apple.otc-font:
+- public.font
 com.apple.package:
 - public.directory
+com.apple.panicreport:
+- public.log
+- public.utf8-plain-text
+com.apple.pasteboard.promised-file-content-type: []
+com.apple.pasteboard.promised-file-url: []
+com.apple.pdf-printer-settings:
+- public.data
 com.apple.pef-binary:
 - public.data
 - public.executable
+com.apple.perf.tailspin:
+- com.apple.ktrace
+com.apple.photo-booth-library:
+- com.apple.package
+com.apple.photo.library:
+- com.apple.package
+com.apple.photos.album-object:
+- com.apple.photos.item-object
+com.apple.photos.apple-adjustment-envelope:
+- com.apple.property-list
+- public.content
+- public.data
+com.apple.photos.asset-bundle:
+- com.apple.package
+com.apple.photos.folder-object:
+- com.apple.photos.item-object
+com.apple.photos.item-object:
+- com.apple.applescript.object
+com.apple.photos.library:
+- com.apple.package
+com.apple.photos.mediaitem-object:
+- com.apple.photos.item-object
+com.apple.photos.object-reference:
+- public.item
+com.apple.photos.object-reference.asset:
+- com.apple.photos.object-reference
+com.apple.photos.object-reference.assetcollection:
+- com.apple.photos.object-reference.collection
+com.apple.photos.object-reference.collection:
+- com.apple.photos.object-reference
+com.apple.photos.object-reference.collectionlist:
+- com.apple.photos.object-reference.collection
+com.apple.photos.object-reference.person:
+- com.apple.photos.object-reference
+com.apple.photos.projects:
+- public.item
+com.apple.photos.projects.legacy.book:
+- com.apple.photos.projects.legacy.keepsake
+com.apple.photos.projects.legacy.calendar:
+- com.apple.photos.projects.legacy.keepsake
+com.apple.photos.projects.legacy.card:
+- com.apple.photos.projects.legacy.keepsake
+com.apple.photos.projects.legacy.keepsake:
+- com.apple.photos.projects
+com.apple.photos.projects.legacy.prints:
+- com.apple.photos.projects.legacy.keepsake
+com.apple.photos.projects.slideshow:
+- com.apple.photos.projects
+com.apple.photos.slow-motion-video-sidecar:
+- public.content
+- public.data
 com.apple.pict:
 - public.image
+com.apple.pictures-folder:
+- public.folder
+com.apple.pkpass:
+- com.apple.bundle
+- com.apple.package
+- public.data
+com.apple.pkpass-data:
+- public.data
 com.apple.plugin:
 - com.apple.bundle
 - com.apple.package
+com.apple.pluginkit:
+- com.apple.bundle
+- com.apple.package
+com.apple.podcast: []
+com.apple.podcasts.episode:
+- public.content
+- public.data
+com.apple.podcasts.show:
+- public.content
+- public.data
+com.apple.podcasts.station:
+- public.content
+- public.data
+com.apple.powerbook:
+- com.apple.mac.laptop
+com.apple.powerbook-g4-12:
+- com.apple.powerbook
+com.apple.powerbook-g4-15:
+- com.apple.powerbook
+com.apple.powerbook-g4-17:
+- com.apple.powerbook
+com.apple.powerbook-g4-titanium:
+- com.apple.powerbook
+com.apple.powermac:
+- com.apple.mac.tower
+com.apple.powermac-g4-mirrored-drive-doors:
+- com.apple.powermac
+com.apple.powermac-g4-quicksilver:
+- com.apple.powermac
+com.apple.powermac-g5:
+- com.apple.powermac
+com.apple.ppp-plug-in:
+- com.apple.plugin
+com.apple.preference.network:
+- public.text
+- public.xml
+com.apple.preview.blank:
+- public.data
+com.apple.private.auto-loop-gif: []
+com.apple.private.live-photo-bundle:
+- com.apple.bundle
+- com.apple.live-photo
+- com.apple.package
+com.apple.pro-display-xdr:
+- public.display
+com.apple.profile-background-color:
+- public.data
+com.apple.profile-font-and-color:
+- public.data
+com.apple.profile-font-icon:
+- public.item
+com.apple.property-list:
+- public.data
+- public.text
 com.apple.protected-mpeg-4-audio:
 - public.audio
+com.apple.protected-mpeg-4-audio-b:
+- com.apple.protected-mpeg-4-audio
+com.apple.protected-mpeg-4-video:
+- com.apple.m4v-video
+com.apple.provisionprofile:
+- public.content
+- public.data
+- public.item
+- public.text
+- public.xml
+com.apple.public-folder:
+- public.folder
+com.apple.pubsub.entry: []
+com.apple.pubsub.feed: []
 com.apple.quartz-composer-composition:
 - public.data
 - public.executable
+com.apple.quicklook-generator:
+- com.apple.plugin
 com.apple.quicktime-image:
 - public.image
 com.apple.quicktime-movie:
 - public.movie
+com.apple.quicktimeplayerx-composition:
+- public.content
+- public.data
+com.apple.quicktimeplayerx-composition-bundle:
+- com.apple.package
+- public.composite-content
+com.apple.radio-station:
+- public.audio
+com.apple.rcproject:
+- com.apple.package
+- public.composite-content
+- public.directory
+- public.item
+com.apple.reality:
+- public.data
+- public.item
+com.apple.remotedesktop.computer-object: []
 com.apple.resolvable: []
 com.apple.rez-source:
 - public.source-code
 com.apple.rtfd:
 - com.apple.package
 - public.composite-content
+- "public.composite-\u200Bcontent"
+com.apple.safari.bookmark:
+- public.data
+com.apple.safari.document-object:
+- com.apple.applescript.object
+com.apple.safari.download:
+- public.data
+com.apple.safari.extension:
+- public.data
+com.apple.safari.history:
+- public.data
+com.apple.scenekit.assetcatalog:
+- public.directory
+com.apple.scenekit.particlesystem:
+- public.data
+com.apple.scenekit.scene:
+- public.3d-content
+- public.data
+com.apple.scenekit.scene.zip:
+- public.3d-content
+- public.data
+com.apple.scenekit.shadercache:
+- public.directory
+com.apple.scripting-definition:
+- public.xml
+com.apple.self-extracting-archive:
+- public.archive
+- public.data
+com.apple.server-applications-folder:
+- public.folder
+com.apple.servers-folder:
+- public.folder
+com.apple.service-application:
+- com.apple.application-bundle
+com.apple.shortcut:
+- is.workflow.my.workflow
+com.apple.show:
+- public.movie
+com.apple.shutdownstall:
+- public.log
+- public.utf8-plain-text
+com.apple.sirikit.intentdefinition:
+- public.data
+com.apple.sites-folder:
+- public.folder
+com.apple.song:
+- public.audio
+com.apple.spinreport:
+- public.log
+- public.utf8-plain-text
+com.apple.spotlight.item:
+- com.apple.cocoa.path
+com.apple.spritekit.serialized:
+- public.data
+com.apple.stickies.appexport:
+- com.apple.package
+- public.composite-content
+com.apple.storage-external:
+- public.storage
+com.apple.storage-internal:
+- public.storage
+com.apple.storage-netboot:
+- public.storage
+com.apple.storage-removable:
+- public.storage
+com.apple.structured-text:
+- public.plain-text
+com.apple.structured-text.address:
+- com.apple.structured-text
+com.apple.structured-text.date:
+- com.apple.structured-text
+com.apple.structured-text.telephone-number:
+- com.apple.structured-text
+com.apple.structured-text.transit-information:
+- com.apple.structured-text
 com.apple.symbol-export:
+- public.plain-text
 - public.source-code
+com.apple.system-extension:
+- com.apple.localizable-name-bundle
+- com.apple.package
+com.apple.systempreference.prefpane:
+- com.apple.bundle
+- com.apple.package
+com.apple.systempreference.prefpane.extension:
+- com.apple.bundle
+- com.apple.package
+com.apple.systempreference.screen-saver:
+- com.apple.bundle
+- com.apple.package
+com.apple.systempreference.screen-slide-saver:
+- com.apple.bundle
+- com.apple.package
+com.apple.systemprofiler.document:
+- public.xml
+com.apple.terminal.session:
+- public.data
+com.apple.terminal.settings:
+- public.data
+com.apple.terminal.shell-script:
+- public.shell-script
+com.apple.text-based-dylib:
+- public.yaml
+com.apple.textedit.document-object:
+- com.apple.applescript.object
+com.apple.time-capsule:
+- com.apple.device
 com.apple.traditional-mac-plain-text:
 - public.plain-text
+com.apple.trash-empty:
+- public.folder
+com.apple.trash-full:
+- public.folder
 com.apple.truetype-datafork-suitcase-font:
 - public.truetype-font
+com.apple.tv.database:
+- public.data
+- public.database
+com.apple.tv.iappurl:
+- public.file-url
+com.apple.tv.ite:
+- com.apple.package
+- public.html
+com.apple.tv.itms:
+- public.url
+com.apple.tv.library:
+- com.apple.package
+com.apple.tv.m3u-playlist:
+- public.playlist
+- public.text
+com.apple.tv.metadata:
+- public.xml
+com.apple.tv.movpkg:
+- com.apple.package
 com.apple.txn.text-multimedia-data:
 - public.composite-content
 - public.data
+com.apple.unknown-object:
+- com.apple.document-type
+com.apple.user: []
+com.apple.user-group: []
+com.apple.user-idisk: []
+com.apple.user-unknown: []
+com.apple.users-folder:
+- public.folder
+com.apple.utilities-folder:
+- public.folder
+com.apple.video-podcast:
+- com.apple.podcast
+- public.movie
+com.apple.vnc-internet-location:
+- com.apple.internet-location
+com.apple.voiceover-preferences:
+- com.apple.package
+- public.content
+com.apple.watch:
+- com.apple.ios-device
+- public.device
+com.apple.watch-38mm-1:
+- com.apple.watch
+com.apple.watch-38mm-2:
+- com.apple.watch
+com.apple.watch-38mm-3:
+- com.apple.watch
+com.apple.watch-38mm-4:
+- com.apple.watch
+com.apple.watch-38mm-5:
+- com.apple.watch
+com.apple.watch-38mm-7:
+- com.apple.watch
+com.apple.watch-38mm-8:
+- com.apple.watch
+com.apple.watch-38mm-9:
+- com.apple.watch
+com.apple.watch-38mm-series1-1:
+- com.apple.watch
+com.apple.watch-38mm-series1-2:
+- com.apple.watch
+com.apple.watch-38mm-series1-3:
+- com.apple.watch
+com.apple.watch-38mm-series1-4:
+- com.apple.watch
+com.apple.watch-38mm-series1-5:
+- com.apple.watch
+com.apple.watch-38mm-series1-6:
+- com.apple.watch
+com.apple.watch-38mm-series2-1:
+- com.apple.watch
+com.apple.watch-38mm-series2-2:
+- com.apple.watch
+com.apple.watch-38mm-series2-3:
+- com.apple.watch
+com.apple.watch-38mm-series2-4:
+- com.apple.watch
+com.apple.watch-38mm-series2-5:
+- com.apple.watch
+com.apple.watch-38mm-series2-6:
+- com.apple.watch
+com.apple.watch-38mm-series2-7:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-1:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-11:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-13:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-2:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-5:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-6:
+- com.apple.watch
+com.apple.watch-38mm-series3-cell-7:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-1:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-11:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-13:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-2:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-5:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-6:
+- com.apple.watch
+com.apple.watch-38mm-series3-gps-7:
+- com.apple.watch
+com.apple.watch-42mm-1:
+- com.apple.watch
+com.apple.watch-42mm-2:
+- com.apple.watch
+com.apple.watch-42mm-3:
+- com.apple.watch
+com.apple.watch-42mm-4:
+- com.apple.watch
+com.apple.watch-42mm-5:
+- com.apple.watch
+com.apple.watch-42mm-7:
+- com.apple.watch
+com.apple.watch-42mm-8:
+- com.apple.watch
+com.apple.watch-42mm-9:
+- com.apple.watch
+com.apple.watch-42mm-series1-1:
+- com.apple.watch
+com.apple.watch-42mm-series1-2:
+- com.apple.watch
+com.apple.watch-42mm-series1-3:
+- com.apple.watch
+com.apple.watch-42mm-series1-4:
+- com.apple.watch
+com.apple.watch-42mm-series1-5:
+- com.apple.watch
+com.apple.watch-42mm-series1-6:
+- com.apple.watch
+com.apple.watch-42mm-series2-1:
+- com.apple.watch
+com.apple.watch-42mm-series2-2:
+- com.apple.watch
+com.apple.watch-42mm-series2-3:
+- com.apple.watch
+com.apple.watch-42mm-series2-4:
+- com.apple.watch
+com.apple.watch-42mm-series2-5:
+- com.apple.watch
+com.apple.watch-42mm-series2-6:
+- com.apple.watch
+com.apple.watch-42mm-series2-7:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-1:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-11:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-13:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-2:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-5:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-6:
+- com.apple.watch
+com.apple.watch-42mm-series3-cell-7:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-1:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-11:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-13:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-2:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-5:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-6:
+- com.apple.watch
+com.apple.watch-42mm-series3-gps-7:
+- com.apple.watch
+com.apple.watch-se-1:
+- com.apple.watch
+com.apple.watch-se-13:
+- com.apple.watch
+com.apple.watch-se-2:
+- com.apple.watch
+com.apple.watch-series4-1:
+- com.apple.watch
+com.apple.watch-series4-12:
+- com.apple.watch
+com.apple.watch-series4-13:
+- com.apple.watch
+com.apple.watch-series4-2:
+- com.apple.watch
+com.apple.watch-series4-5:
+- com.apple.watch
+com.apple.watch-series4-6:
+- com.apple.watch
+com.apple.watch-series5-1:
+- com.apple.watch
+com.apple.watch-series5-12:
+- com.apple.watch
+com.apple.watch-series5-13:
+- com.apple.watch
+com.apple.watch-series5-14:
+- com.apple.watch
+com.apple.watch-series5-2:
+- com.apple.watch
+com.apple.watch-series5-5:
+- com.apple.watch
+com.apple.watch-series5-6:
+- com.apple.watch
+com.apple.watch-series5-7:
+- com.apple.watch
+com.apple.watch-series5-8:
+- com.apple.watch
+com.apple.watch-series6-1:
+- com.apple.watch
+com.apple.watch-series6-12:
+- com.apple.watch
+com.apple.watch-series6-13:
+- com.apple.watch
+com.apple.watch-series6-14:
+- com.apple.watch
+com.apple.watch-series6-18:
+- com.apple.watch
+com.apple.watch-series6-2:
+- com.apple.watch
+com.apple.watch-series6-22:
+- com.apple.watch
+com.apple.watch-series6-26:
+- com.apple.watch
+com.apple.watch-series6-5:
+- com.apple.watch
+com.apple.watch-series6-6:
+- com.apple.watch
+com.apple.watch-series6-8:
+- com.apple.watch
+com.apple.watchface:
+- public.content
+- public.data
+com.apple.web-internet-location:
+- com.apple.internet-location
 com.apple.webarchive:
 - public.composite-content
+- public.data
+com.apple.webkit-plugin:
+- com.apple.plugin
+com.apple.widgetkit.simulator.document:
+- com.apple.package
+com.apple.widgetkit.simulator.timeline:
+- com.apple.data
+com.apple.wireless-diagnostics.wdmon:
+- public.data
+com.apple.wireless-diagnostics.wdsidecar:
+- public.data
+com.apple.x11-mach-o-executable:
+- com.apple.mach-o-binary
+com.apple.xar-archive:
+- public.archive
+- public.data
+com.apple.xcframework:
+- public.directory
+com.apple.xcode.apinotes:
+- public.yaml
+com.apple.xcode.appdata:
+- com.apple.package
+- public.composite-content
+com.apple.xcode.archive:
+- com.apple.package
+- public.composite-content
+com.apple.xcode.buildmetrics:
+- public.json
+com.apple.xcode.configsettings:
+- public.plain-text
+com.apple.xcode.docset:
+- com.apple.package
+com.apple.xcode.dsym:
+- com.apple.package
+com.apple.xcode.entitlements-property-list:
+- com.apple.xml-property-list
+com.apple.xcode.model:
+- com.apple.package
+com.apple.xcode.model.data:
+- com.apple.xcode.model
+com.apple.xcode.model.data-mapping:
+- com.apple.xcode.model
+com.apple.xcode.model.data-version:
+- com.apple.xcode.model
+com.apple.xcode.mom:
+- public.data
+com.apple.xcode.plugin:
+- com.apple.plugin
+com.apple.xcode.plugindata:
+- public.xml
+com.apple.xcode.plugindata.compiled:
+- com.apple.binary-property-list
+com.apple.xcode.project:
+- com.apple.package
+- public.composite-content
+com.apple.xcode.projectdata:
+- public.text
+com.apple.xcode.resultbundle:
+- com.apple.package
+- public.composite-content
+com.apple.xcode.strings-dictionary:
+- com.apple.property-list
+com.apple.xcode.strings-text:
+- public.text
+com.apple.xcode.usersettings:
+- public.text
+com.apple.xcode.xcfilelist:
+- public.source-code
+com.apple.xcode.xcloc:
+- public.directory
+com.apple.xip-archive:
+- com.apple.xar-archive
+com.apple.xml-property-list:
+- com.apple.property-list
+- public.xml
+com.apple.xpc-service:
+- com.apple.bundle
+- com.apple.package
+com.apple.xserve:
+- com.apple.mac.rackmount
+com.apple.xserve-g4:
+- com.apple.xserve
+com.apple.xserve-g5:
+- com.apple.xserve
+com.apple.xserve-xeon:
+- com.apple.xserve
+com.audible.aa-audio:
+- public.audio
+com.audible.aa-audiobook:
+- com.audible.aa-audio
+com.audible.aax-audiobook:
+- com.audible.aa-audio
+com.avid.open-media-framework:
+- public.audiovisual-content
+com.canon.cr2-raw-image:
+- public.camera-raw-image
+com.canon.cr3-raw-image:
+- public.camera-raw-image
+com.canon.crw-raw-image:
+- public.camera-raw-image
+com.canon.tif-raw-image:
+- public.camera-raw-image
+com.compuserve.gif:
+- public.image
+com.cyclos.cpt-archive:
+- public.archive
+- public.data
+com.dec.modula-3:
+- public.source-code
+com.digidesign.sd2-audio:
+- public.audio
+com.dxo.raw-image:
+- public.camera-raw-image
+com.epson.raw-image:
+- public.camera-raw-image
+com.evernote.enex:
+- public.xml
+com.facebook.zstandard-archive:
+- public.archive
+- public.data
+com.facebook.zstandard-tar-archive:
+- public.archive
+- public.data
+com.fuji.raw-image:
+- public.camera-raw-image
+com.gingerlabs.notability.nbc:
+- public.data
+com.gingerlabs.notability.notearchive:
+- public.data
+com.gingerlabs.notability.notebundle:
+- com.apple.package
+com.gingerlabs.notability.organizers:
+- com.apple.property-list
+com.google.brotli-archive:
+- public.archive
+- public.data
+com.google.brotli-tar-archive:
+- public.archive
+- public.data
+com.hasselblad.3fr-raw-image:
+- public.camera-raw-image
+com.hasselblad.fff-raw-image:
+- public.camera-raw-image
+com.hogbaysoftware.taskpaper:
+- public.plain-text
+com.ilm.openexr-image:
+- public.image
+com.j2.efx-fax:
+- public.fax
+com.j2.jfx-fax:
+- public.fax
+com.junecloud.deliveries:
+- public.data
+com.khanov.customutihandler.1blockpkg:
+- public.data
+- public.plain-text
+com.kodak.flashpix-image:
+- public.image
+com.kodak.raw-image:
+- public.camera-raw-image
+com.konicaminolta.raw-image:
+- public.camera-raw-image
+com.leafamerica.raw-image:
+- public.camera-raw-image
+com.leica.pwl-raw-image:
+- public.camera-raw-image
+com.leica.raw-image:
+- public.camera-raw-image
+com.leica.rwl-raw-image:
+- public.camera-raw-image
+com.macromates.textmate.bundle:
+- com.apple.package
+com.macromates.textmate.cgi-script:
+- public.script
+com.macromates.textmate.command:
+- com.apple.property-list
+com.macromates.textmate.config-file:
+- public.text
+com.macromates.textmate.drag-command:
+- com.apple.property-list
+com.macromates.textmate.gtd:
+- public.plain-text
+com.macromates.textmate.include-file:
+- public.source-code
+com.macromates.textmate.language:
+- com.apple.property-list
+com.macromates.textmate.lisp:
+- public.source-code
+com.macromates.textmate.logo:
+- public.source-code
+com.macromates.textmate.macro:
+- com.apple.property-list
+com.macromates.textmate.plugin:
+- com.apple.package
+com.macromates.textmate.preferences:
+- com.apple.property-list
+com.macromates.textmate.release-notes:
+- public.text
+com.macromates.textmate.scheme:
+- public.source-code
+com.macromates.textmate.setext:
+- public.text
+com.macromates.textmate.snippet:
+- com.apple.property-list
+com.macromates.textmate.standard-ml:
+- public.source-code
+com.macromates.textmate.theme:
+- com.apple.property-list
+com.microsoft.advanced-stream-redirector:
+- public.audiovisual-content
+- public.xml
+com.microsoft.advanced-systems-format:
+- public.audiovisual-content
+com.microsoft.appx-archive:
+- public.archive
+- public.data
+com.microsoft.asp:
+- public.source-code
+com.microsoft.asp.net:
+- public.source-code
+com.microsoft.bmp:
+- public.image
+com.microsoft.c-sharp:
+- public.source-code
+com.microsoft.cab:
+- public.archive
+- public.data
+com.microsoft.cab-archive:
+- public.archive
+- public.data
+com.microsoft.dds:
+- public.image
+com.microsoft.excel.dif:
+- public.data
+com.microsoft.excel.openxml.addin:
+- public.data
+com.microsoft.excel.openxmlformats.spreadsheetml.sheet:
+- org.openxmlformats.spreadsheetml.sheet
+com.microsoft.excel.openxmlformats.spreadsheetml.sheet.macroenabled:
+- org.openxmlformats.spreadsheetml.sheet.macroenabled
+com.microsoft.excel.openxmlformats.spreadsheetml.template:
+- org.openxmlformats.spreadsheetml.template
+com.microsoft.excel.openxmlformats.spreadsheetml.template.macroenabled:
+- org.openxmlformats.spreadsheetml.template.macroenabled
+com.microsoft.excel.plugin:
+- com.apple.plugin
+com.microsoft.excel.pref:
+- public.data
+com.microsoft.excel.sheet.binary.macroenabled:
+- public.composite-content
+- public.data
+- public.executable
+- public.spreadsheet
+- public.zip-archive
+com.microsoft.excel.slk:
+- public.data
+com.microsoft.excel.space-separated-values-text:
+- public.text
+com.microsoft.excel.tlb:
+- com.apple.bundle
+com.microsoft.excel.xla:
+- public.composite-content
+- public.data
+com.microsoft.excel.xla.biff2:
+- com.microsoft.excel.xla
+com.microsoft.excel.xla.biff4:
+- com.microsoft.excel.xla
+com.microsoft.excel.xlb:
+- public.data
+com.microsoft.excel.xlb.biff4:
+- com.microsoft.excel.xlb
+com.microsoft.excel.xld:
+- public.data
+com.microsoft.excel.xll:
+- public.data
+com.microsoft.excel.xlm:
+- public.data
+com.microsoft.excel.xlm.biff2:
+- com.microsoft.excel.xlm
+com.microsoft.excel.xlm.biff3:
+- com.microsoft.excel.xlm
+com.microsoft.excel.xlm.biff4:
+- com.microsoft.excel.xlm
+com.microsoft.excel.xlm.stationery.biff3:
+- com.microsoft.excel.xlm
+com.microsoft.excel.xlm.stationery.biff4:
+- com.microsoft.excel.xlm
+com.microsoft.excel.xls:
+- public.composite-content
+- public.data
+- public.spreadsheet
+com.microsoft.excel.xls.biff2:
+- com.microsoft.excel.xls
+com.microsoft.excel.xls.biff3:
+- com.microsoft.excel.xls
+com.microsoft.excel.xls.biff4:
+- com.microsoft.excel.xls
+com.microsoft.excel.xls.biff5:
+- com.microsoft.excel.xls
+com.microsoft.excel.xls.stationery.biff3:
+- com.microsoft.excel.xls
+com.microsoft.excel.xls.stationery.biff4:
+- com.microsoft.excel.xls
+com.microsoft.excel.xls.stationery.biff5:
+- com.microsoft.excel.xls
+com.microsoft.excel.xlt:
+- public.data
+- public.spreadsheet
+com.microsoft.excel.xlw:
+- public.data
+- public.spreadsheet
+com.microsoft.excel.xlw.biff2:
+- com.microsoft.excel.xlw
+com.microsoft.excel.xlw.biff3:
+- com.microsoft.excel.xlw
+com.microsoft.excel.xlw.biff4:
+- com.microsoft.excel.xlw
+com.microsoft.excel.xlw.biff5:
+- com.microsoft.excel.xlw
+com.microsoft.excel.xml:
+- public.data
+com.microsoft.ico:
+- public.image
+com.microsoft.ini:
+- public.text
+com.microsoft.internet-shortcut:
+- public.data
+- public.stored-url
+com.microsoft.msi-installer:
+- public.archive
+- public.data
+com.microsoft.office.openxml.theme:
+- public.data
+com.microsoft.onedrive.exportedbadges.ignored:
+- com.apple.icon-decoration.badge
+com.microsoft.onedrive.exportedbadges.pinned:
+- com.apple.icon-decoration.badge
+com.microsoft.onedrive.exportedbadges.pinned.shared:
+- com.apple.icon-decoration.badge
+com.microsoft.onedrive.exportedbadges.shared:
+- com.apple.icon-decoration.badge
+com.microsoft.onedrive.exportedfolderbadges.shortcut:
+- com.apple.icon-decoration.emboss
+com.microsoft.onedrive.exportedfolderbadges.teamsite:
+- com.apple.icon-decoration.emboss
+com.microsoft.powerpoint.openxmlformats.presentationml.presentation:
+- org.openxmlformats.presentationml.presentation
+com.microsoft.powerpoint.openxmlformats.presentationml.presentation.macroenabled:
+- org.openxmlformats.presentationml.presentation.macroenabled
+com.microsoft.powerpoint.openxmlformats.presentationml.slideshow:
+- org.openxmlformats.presentationml.slideshow
+com.microsoft.powerpoint.openxmlformats.presentationml.slideshow.macroenabled:
+- org.openxmlformats.presentationml.slideshow.macroenabled
+com.microsoft.powerpoint.openxmlformats.presentationml.template:
+- org.openxmlformats.presentationml.template
+com.microsoft.powerpoint.openxmlformats.presentationml.template.macroenabled:
+- org.openxmlformats.presentationml.template.macroenabled
+com.microsoft.powerpoint.pot:
+- public.data
+- public.presentation
+com.microsoft.powerpoint.ppa:
+- public.data
+com.microsoft.powerpoint.ppam:
+- public.data
+com.microsoft.powerpoint.pps:
+- public.data
+- public.presentation
+com.microsoft.powerpoint.ppt:
+- public.data
+- public.presentation
+com.microsoft.powerpoint.presentation-object:
+- com.apple.applescript.object
+com.microsoft.powerpoint.slide-object:
+- com.apple.applescript.object
+com.microsoft.ppt.export.animatedgif:
+- com.compuserve.gif
+com.microsoft.ppt.export.bmp:
+- com.microsoft.bmp
+com.microsoft.ppt.export.ext.animatedgif:
+- com.compuserve.gif
+com.microsoft.ppt.export.ext.bmp:
+- com.microsoft.bmp
+com.microsoft.ppt.export.ext.gif:
+- com.compuserve.gif
+com.microsoft.ppt.export.ext.jpg:
+- public.jpeg
+com.microsoft.ppt.export.ext.png:
+- public.png
+com.microsoft.ppt.export.ext.tiff:
+- public.tiff
+com.microsoft.ppt.export.gif:
+- com.compuserve.gif
+com.microsoft.ppt.export.jpg:
+- public.jpeg
+com.microsoft.ppt.export.mov:
+- public.movie
+com.microsoft.ppt.export.mp4:
+- public.movie
+com.microsoft.ppt.export.pdf:
+- com.adobe.pdf
+com.microsoft.ppt.export.png:
+- public.png
+com.microsoft.ppt.export.rtf:
+- public.rtf
+com.microsoft.ppt.export.tiff:
+- public.tiff
+com.microsoft.visual-basic:
+- public.source-code
+com.microsoft.waveform-audio:
+- public.audio
+com.microsoft.wim-archive:
+- public.archive
 - public.data
 com.microsoft.windows-dynamic-link-library:
 - public.data
@@ -106,23 +3201,500 @@ com.microsoft.windows-dynamic-link-library:
 com.microsoft.windows-executable:
 - public.data
 - public.executable
+com.microsoft.windows-media-wax:
+- com.microsoft.advanced-stream-redirector
+- public.audio
+com.microsoft.windows-media-wm:
+- com.microsoft.advanced-systems-format
+- public.movie
+com.microsoft.windows-media-wma:
+- com.microsoft.advanced-systems-format
+- public.audio
+com.microsoft.windows-media-wmp:
+- com.microsoft.advanced-systems-format
+- public.movie
+com.microsoft.windows-media-wmv:
+- com.microsoft.advanced-systems-format
+- public.movie
+com.microsoft.windows-media-wmx:
+- com.microsoft.advanced-stream-redirector
+- public.movie
+com.microsoft.windows-media-wvx:
+- com.microsoft.advanced-stream-redirector
+- public.movie
+com.microsoft.word.dictionary:
+- public.data
+com.microsoft.word.doc:
+- public.composite-content
+- public.data
+com.microsoft.word.dot:
+- public.composite-content
+- public.data
+com.microsoft.word.mhtml:
+- public.data
+com.microsoft.word.openxmlformats.wordprocessingml.document:
+- org.openxmlformats.wordprocessingml.document
+com.microsoft.word.openxmlformats.wordprocessingml.document.macroenabled:
+- org.openxmlformats.wordprocessingml.document.macroenabled
+com.microsoft.word.openxmlformats.wordprocessingml.template:
+- org.openxmlformats.wordprocessingml.template
+com.microsoft.word.openxmlformats.wordprocessingml.template.macroenabled:
+- org.openxmlformats.wordprocessingml.template.macroenabled
+com.microsoft.word.strictopenxmlformats.wordprocessingml.document:
+- org.openxmlformats.wordprocessingml.document
+com.microsoft.word.wordml:
+- public.composite-content
+- public.xml
+com.microsoft.word.wordprocessingml:
+- public.composite-content
+- public.xml
+com.mindnode.mindnode.mindmap:
+- com.apple.package
+- public.composite-content
+com.mindnode.mindnode.sffmindmap:
+- public.composite-content
+- public.data
+com.mips.mips-assembler:
+- public.source-code
+com.multimarkdown.composer.keybinding:
+- public.text
+com.multimarkdown.composer.theme:
+- public.text
+com.mythtv.nuv:
+- public.video
+com.nero.nrg-image:
+- public.iso-image
 com.netscape.javascript-source:
 - public.executable
+- public.script
 - public.source-code
+com.network172.pit-archive:
+- public.archive
+- public.data
+com.nikon.nrw-raw-image:
+- public.camera-raw-image
+com.nikon.raw-image:
+- public.camera-raw-image
+com.nowsoftware.now-archive:
+- public.archive
+- public.data
+com.nscripter.nsa-archive:
+- public.archive
+- public.data
+com.nscripter.sar-archive:
+- public.archive
+- public.data
+com.olympus.or-raw-image:
+- com.olympus.raw-image
+com.olympus.raw-image:
+- public.camera-raw-image
+com.olympus.sr-raw-image:
+- com.olympus.raw-image
+com.padus.cdi-image:
+- public.iso-image
+com.panasonic.raw-image:
+- public.camera-raw-image
+com.panasonic.rw2-raw-image:
+- public.camera-raw-image
+com.pentax.raw-image:
+- public.camera-raw-image
+com.phaseone.raw-image:
+- public.camera-raw-image
+com.pixar.universal-scene-description:
+- public.3d-content
+- public.data
+com.pixar.universal-scene-description-mobile:
+- public.3d-content
+- public.data
+com.pixar.usd.ascii:
+- public.3d-content
+- public.data
+com.pixar.usd.crate:
+- public.3d-content
+- public.data
 com.pkware.zip-archive:
 - public.archive
 - public.data
-com.sun.java-archive:
+com.rarlab.rar-archive:
 - public.archive
 - public.data
+com.real.ram:
+- public.text
+com.real.realaudio:
+- public.audio
+com.real.realmedia:
+- public.movie
+com.real.realmedia-vbr:
+- public.movie
+com.redhat.rpm-archive:
+- public.archive
+- public.data
+com.roaringpenguin.remind:
+- public.text
+com.roxio.disk-image-toast:
+- com.apple.disk-image
+com.rsa.pkcs-12:
+- public.data
+com.samsung.raw-image:
+- public.camera-raw-image
+com.scenarist.closed-caption:
+- public.text
+com.sgi.sgi-image:
+- public.image
+com.sony.arw-raw-image:
+- public.camera-raw-image
+com.sony.raw-image:
+- public.camera-raw-image
+com.sony.sr2-raw-image:
+- public.camera-raw-image
+com.sony.wave64:
+- public.audio
+com.soundblaster.soundfont:
+- public.audio
+com.stuffit.archive.sidx:
+- com.allume.stuffit-archive
+com.stuffit.archive.sit:
+- com.allume.stuffit-archive
+com.stuffit.archive.sitx:
+- com.allume.stuffit-archive
+com.sun.java-archive:
 - public.executable
+- public.zip-archive
 com.sun.java-class:
 - public.data
 - public.executable
+com.sun.java-properties:
+- public.source-code
+com.sun.java-server-pages:
+- public.source-code
 com.sun.java-source:
 - public.source-code
 com.sun.java-web-start:
 - public.xml
+com.sun.web-application-archive:
+- com.sun.java-archive
+com.symantec.dd-archive:
+- public.archive
+- public.data
+com.tascam.opentl:
+- public.composite-content
+- public.data
+com.taskpaper.text:
+- public.plain-text
+com.textpattern.textile:
+- public.text
+com.toketaware.uti.ithoughts.itmz:
+- public.composite-content
+- public.data
+com.truevision.tga-image:
+- public.image
+com.unknown.abc:
+- public.plain-text
+- public.text
+com.unknown.asy:
+- public.plain-text
+- public.text
+com.unknown.bbx:
+- public.plain-text
+- public.text
+com.unknown.cbx:
+- public.plain-text
+- public.text
+com.unknown.clo:
+- public.plain-text
+- public.text
+com.unknown.dn:
+- public.plain-text
+- public.text
+com.unknown.epsi:
+- public.data
+com.unknown.fd:
+- public.plain-text
+- public.text
+com.unknown.gabc:
+- public.plain-text
+- public.text
+com.unknown.gaux:
+- org.tug.tex
+- public.plain-text
+- public.text
+com.unknown.glog:
+- org.tug.tex
+- public.plain-text
+- public.text
+com.unknown.gtex:
+- org.tug.tex
+- public.plain-text
+- public.text
+com.unknown.htx:
+- public.plain-text
+- public.text
+com.unknown.ins:
+- public.plain-text
+- public.text
+com.unknown.lbx:
+- public.plain-text
+- public.text
+com.unknown.lhs:
+- public.plain-text
+- public.text
+com.unknown.ly:
+- public.plain-text
+- public.text
+com.unknown.lytex:
+- public.plain-text
+- public.text
+com.unknown.md:
+- public.plain-text
+- public.text
+com.unknown.rnw:
+- public.plain-text
+- public.text
+com.unknown.sh:
+- public.plain-text
+- public.text
+com.unknown.sk:
+- public.plain-text
+- public.text
+com.unknown.skt:
+- public.plain-text
+- public.text
+com.unknown.stex:
+- public.plain-text
+- public.text
+com.winace.ace-archive:
+- public.archive
+- public.data
+com.winzip.zipx-archive:
+- public.archive
+- public.data
+com.wolfram.cdf:
+- public.content
+- public.data
+- public.text
+com.wolfram.cdf.text:
+- public.content
+- public.data
+- public.text
+com.wolfram.kernelresource:
+- public.data
+com.wolfram.language:
+- public.source-code
+com.wolfram.notebook:
+- public.content
+- public.data
+- public.text
+com.wolfram.notebook.player:
+- public.content
+- public.data
+- public.text
+com.wolfram.notebookv2:
+- public.text
+com.wolfram.package:
+- public.source-code
+com.wolfram.script:
+- public.content
+- public.data
+com.wolfram.textresource:
+- public.plain-text
+comp.text.tex.distribution.bridge:
+- com.apple.bundle
+- com.apple.package
+cx.c3.arc-archive:
+- public.archive
+- public.data
+cx.c3.arj-archive:
+- public.archive
+- public.data
+cx.c3.compress-tar-archive:
+- cx.c3.compress-archive
+cx.c3.dcs-archive:
+- public.archive
+- public.data
+cx.c3.dms-archive:
+- public.archive
+- public.data
+cx.c3.ha-archive:
+- public.archive
+- public.data
+cx.c3.lbr-archive:
+- public.archive
+- public.data
+cx.c3.lha-archive:
+- public.archive
+- public.data
+cx.c3.lhf-archive:
+- public.archive
+- public.data
+cx.c3.lzx-archive:
+- public.archive
+- public.data
+cx.c3.packdev-archive:
+- public.archive
+- public.data
+cx.c3.pax-archive:
+- public.archive
+- public.data
+cx.c3.pma-archive:
+- public.archive
+- public.data
+cx.c3.pp-archive:
+- public.archive
+- public.data
+cx.c3.xmash-archive:
+- public.archive
+- public.data
+cx.c3.zoo-archive:
+- public.archive
+- public.data
+cx.c3.zoom-archive:
+- public.archive
+- public.data
+edu.uo.texshop.comment:
+- public.plain-text
+- public.text
+edu.uo.texshop.ctx:
+- org.tug.tex
+edu.uo.texshop.engine:
+- public.plain-text
+- public.text
+edu.uo.texshop.ltx:
+- public.plain-text
+edu.uo.texshop.ptx:
+- public.plain-text
+edu.uo.texshop.tex:
+- public.plain-text
+edu.uo.texshop.texi:
+- org.tug.tex
+edu.uo.texshop.texshop:
+- public.plain-text
+- public.text
+gov.nih.nifti-1:
+- public.data
+in.moinmo.wiki-source:
+- public.text
+io.mpv.ac3:
+- public.audio
+io.mpv.ass:
+- public.plain-text
+io.mpv.avi:
+- public.movie
+io.mpv.divx:
+- public.movie
+io.mpv.dts:
+- public.audio
+io.mpv.dv:
+- public.movie
+io.mpv.flac:
+- public.audio
+io.mpv.flv:
+- public.movie
+io.mpv.h264:
+- public.movie
+io.mpv.hevc:
+- public.movie
+io.mpv.mk3d:
+- public.movie
+io.mpv.mka:
+- public.audio
+io.mpv.mkv:
+- public.movie
+io.mpv.mts:
+- public.movie
+io.mpv.ogg-audio:
+- public.audio
+io.mpv.ogv:
+- public.movie
+io.mpv.pcm:
+- public.audio
+io.mpv.rmvb:
+- public.movie
+io.mpv.smi:
+- public.plain-text
+io.mpv.sub:
+- public.plain-text
+io.mpv.subrip:
+- public.plain-text
+io.mpv.vob:
+- public.movie
+io.mpv.vobsub:
+- public.data
+io.mpv.webm:
+- public.movie
+io.mpv.wma:
+- public.audio
+io.mpv.wmv:
+- public.movie
+io.mpv.xvid:
+- public.movie
+io.mpv.y4m:
+- public.movie
+io.mpv.yuv:
+- public.movie
+is.workflow.my.workflow:
+- com.apple.property-list
+- public.content
+net.daringfireball.markdown:
+- public.plain-text
+- public.text
+net.maxon.cinema4d.c4d:
+- public.composite-content
+- public.data
+net.maxon.cinema4d.cof:
+- public.composite-content
+- public.data
+net.maxon.cinema4d.csc:
+- public.plain-text
+net.multimarkdown.opml:
+- org.opml.opml
+net.multimarkdown.text:
+- public.plain-text
+net.sourceforge.bibdesk.bdskcache:
+- public.data
+net.sourceforge.bibdesk.bdsksearch:
+- public.data
+net.sourceforge.bibdesk.ris:
+- public.plain-text
+net.sourceforge.bibdesk.webofscience:
+- public.plain-text
+org.3gpp.adaptive-multi-rate-audio:
+- public.audio
+org.7-zip.7-zip-archive:
+- public.archive
+- public.data
+org.aafassociation.advanced-authoring-format:
+- public.composite-content
+- public.data
+org.acidanthera.iojones:
+- com.apple.property-list
+org.acidanthera.maciasl.tableset:
+- com.apple.property-list
+org.acpica.aml:
+- public.object-code
+org.acpica.dsl:
+- public.source-code
+org.archive.warc-archive:
+- public.archive
+- public.data
+org.beanshell.beanshell:
+- public.source-code
+org.chromium.extension:
+- public.data
+org.coffeescript.coffeescript:
+- public.source-code
+org.complang.ragel:
+- public.source-code
+org.contextfreeart.contextfree:
+- public.source-code
+org.debian.deb-archive:
+- public.archive
+- public.data
+org.dlang.d:
+- public.source-code
+org.erlang.erlang:
+- public.source-code
+org.fscript.fscript:
+- public.script
 org.gnu.gnu-tar-archive:
 - public.archive
 - public.data
@@ -130,150 +3702,1044 @@ org.gnu.gnu-zip-archive:
 - public.archive
 - public.data
 org.gnu.gnu-zip-tar-archive:
-- org.gnu.gnu-zip-archve
+- org.gnu.gnu-zip-archive
+org.haskell.haskell:
+- public.source-code
+org.idpf.epub-container:
+- public.composite-content
+- public.data
+org.idpf.epub-folder:
+- com.apple.package
+- public.composite-content
+org.ietf.ldap-data-interchange-format:
+- public.text
+org.ietf.mhtml:
+- public.data
+org.iolanguage.io:
+- public.source-code
+org.iso.sql:
+- public.source-code
+org.khronos.astc:
+- public.image
+org.khronos.collada.digital-asset-exchange:
+- public.3d-content
+- public.audiovisual-content
+- public.xml
+org.khronos.glsl-source:
+- public.source-code
+org.khronos.glsl.fragment-shader:
+- org.khronos.glsl-source
+org.khronos.glsl.geometry-shader:
+- org.khronos.glsl-source
+org.khronos.glsl.tess-control-shader:
+- org.khronos.glsl-source
+org.khronos.glsl.tess-evaluation-shader:
+- org.khronos.glsl-source
+org.khronos.glsl.vertex-shader:
+- org.khronos.glsl-source
+org.khronos.ktx:
+- public.image
+org.libreoffice.123-document:
+- public.content
+- public.data
+org.libreoffice.cdr-document:
+- public.content
+- public.data
+- public.image
+org.libreoffice.cgm-document:
+- public.content
+- public.data
+- public.image
+org.libreoffice.csv-document:
+- public.content
+- public.data
+- public.text
+org.libreoffice.dbf-document:
+- public.content
+- public.data
+org.libreoffice.dif-document:
+- public.content
+- public.data
+org.libreoffice.dxf-document:
+- public.content
+- public.data
+- public.image
+org.libreoffice.emf-document:
+- public.content
+- public.data
+- public.image
+org.libreoffice.hwp-document:
+- public.content
+- public.data
+org.libreoffice.mspub-document:
+- public.content
+- public.data
+org.libreoffice.pdb-document:
+- public.content
+- public.data
+org.libreoffice.slk-document:
+- public.content
+- public.data
+- public.text
+org.libreoffice.visio-document:
+- public.content
+- public.data
+org.libreoffice.wks-document:
+- public.content
+- public.data
+org.libreoffice.wmf-document:
+- public.content
+- public.data
+- public.image
+org.libreoffice.wpd-document:
+- public.content
+- public.data
+org.libreoffice.wri-document:
+- public.content
+- public.data
+org.lua.lua:
+- public.source-code
+org.matroska.mka:
+- public.audio
+org.matroska.mkv:
+- public.movie
+org.mediawiki.wiki-source:
+- public.text
+org.musescore.mscx:
+- public.content
+- public.data
+org.musescore.mscz:
+- public.content
+- public.data
+org.nema.dicom:
+- public.data
+org.oasis-open.opendocument:
+- public.data
+org.oasis-open.opendocument.chart:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+org.oasis-open.opendocument.chart-template:
+- org.oasis-open.opendocument
+- public.composite-content
+org.oasis-open.opendocument.database:
+- public.content
+- public.data
+- public.database
+org.oasis-open.opendocument.formula:
+- org.oasis-open.opendocument
+- public.content
+- public.data
+org.oasis-open.opendocument.formula-template:
+- org.oasis-open.opendocument
+- public.content
+org.oasis-open.opendocument.graphics:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+org.oasis-open.opendocument.graphics-template:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+org.oasis-open.opendocument.image:
+- org.oasis-open.opendocument
+- public.image
+org.oasis-open.opendocument.image-template:
+- org.oasis-open.opendocument
+- public.image
+org.oasis-open.opendocument.presentation:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+- public.presentation
+org.oasis-open.opendocument.presentation-template:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+- public.presentation
+org.oasis-open.opendocument.spreadsheet:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+- public.spreadsheet
+org.oasis-open.opendocument.spreadsheet-template:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+- public.spreadsheet
+org.oasis-open.opendocument.text:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+org.oasis-open.opendocument.text-master:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+org.oasis-open.opendocument.text-master-template:
+- public.content
+- public.data
+org.oasis-open.opendocument.text-template:
+- org.oasis-open.opendocument
+- public.composite-content
+- public.content
+- public.data
+org.oasis-open.opendocument.text-web:
+- org.oasis-open.opendocument
+- public.composite-content
+org.oasis-open.xliff:
+- public.xml
+org.ocaml.ocaml:
+- public.source-code
+org.openoffice.extension:
+- public.content
+- public.data
+org.openoffice.formula:
+- public.content
+- public.data
+org.openoffice.graphics:
+- public.content
+- public.data
+org.openoffice.graphics-template:
+- public.content
+- public.data
+org.openoffice.presentation:
+- public.content
+- public.data
+- public.presentation
+org.openoffice.presentation-template:
+- public.content
+- public.data
+- public.presentation
+org.openoffice.spreadsheet:
+- public.content
+- public.data
+- public.spreadsheet
+org.openoffice.spreadsheet-template:
+- public.content
+- public.data
+- public.spreadsheet
+org.openoffice.text:
+- public.content
+- public.data
+org.openoffice.text-master:
+- public.content
+- public.data
+org.openoffice.text-template:
+- public.content
+- public.data
+org.openxmlformats.openxml:
+- public.data
+org.openxmlformats.presentationml.presentation:
+- org.openxmlformats.openxml
+- public.presentation
+org.openxmlformats.presentationml.presentation.macroenabled:
+- org.openxmlformats.openxml
+- public.executable
+- public.presentation
+org.openxmlformats.presentationml.slideshow:
+- org.openxmlformats.openxml
+- public.presentation
+org.openxmlformats.presentationml.slideshow.macroenabled:
+- org.openxmlformats.openxml
+- public.executable
+- public.presentation
+org.openxmlformats.presentationml.template:
+- org.openxmlformats.openxml
+- public.executable
+- public.presentation
+org.openxmlformats.presentationml.template.macroenabled:
+- org.openxmlformats.openxml
+- public.executable
+- public.presentation
+org.openxmlformats.spreadsheetml.sheet:
+- org.openxmlformats.openxml
+- public.composite-content
+- public.spreadsheet
+org.openxmlformats.spreadsheetml.sheet.macroenabled:
+- org.openxmlformats.openxml
+- public.composite-content
+- public.executable
+- public.spreadsheet
+org.openxmlformats.spreadsheetml.template:
+- org.openxmlformats.openxml
+- public.composite-content
+- public.spreadsheet
+org.openxmlformats.spreadsheetml.template.macroenabled:
+- org.openxmlformats.openxml
+- public.composite-content
+- public.data
+- public.executable
+- public.spreadsheet
+org.openxmlformats.wordprocessingml.document:
+- org.openxmlformats.openxml
+- public.composite-content
+org.openxmlformats.wordprocessingml.document.macro-enabled:
+- public.composite-content
+- public.data
+org.openxmlformats.wordprocessingml.document.macroenabled:
+- org.openxmlformats.openxml
+- public.composite-content
+- public.executable
+org.openxmlformats.wordprocessingml.template:
+- org.openxmlformats.openxml
+- public.composite-content
+org.openxmlformats.wordprocessingml.template.macro-enabled:
+- public.composite-content
+- public.data
+org.openxmlformats.wordprocessingml.template.macroenabled:
+- org.openxmlformats.openxml
+- public.composite-content
+- public.executable
+org.python.restructuredtext:
+- public.text
+org.r-project.r:
+- public.source-code
+org.ruby-lang.eruby:
+- public.html
+org.rubyonrails.erb-sql:
+- public.source-code
+org.slatelanguage.slate:
+- public.source-code
+org.smpte.mxf:
+- public.movie
+org.strictopenxmlformats.wordprocessingml.document:
+- org.openxmlformats.openxml
+- public.composite-content
+org.swig.swig:
+- public.source-code
+org.textbundle.compressed:
+- com.pkware.zip-archive
+org.textbundle.package:
+- com.apple.package
+org.tug.aux:
+- public.plain-text
+- public.text
+org.tug.bst:
+- public.plain-text
+- public.text
+org.tug.cls:
+- public.plain-text
+- public.text
+org.tug.ctx:
+- org.tug.tex
+- public.plain-text
+- public.text
+org.tug.def:
+- public.plain-text
+- public.text
+org.tug.drv:
+- public.plain-text
+- public.text
+org.tug.dtx:
+- public.plain-text
+- public.text
+org.tug.fdd:
+- public.plain-text
+- public.text
+org.tug.log:
+- public.plain-text
+- public.text
+org.tug.ltx:
+- org.tug.tex
+- public.plain-text
+- public.text
+org.tug.lua:
+- public.plain-text
+- public.text
+org.tug.mf:
+- public.plain-text
+- public.text
+org.tug.mp:
+- public.plain-text
+- public.text
+org.tug.sty:
+- public.plain-text
+- public.text
+org.tug.tex:
+- public.plain-text
+- public.text
+org.tug.tex.bibtex:
+- public.plain-text
+- public.text
+org.tug.tex.context:
+- org.tug.tex
+org.tug.tex.dvi:
+- public.data
+org.tug.tex.latex:
+- org.tug.tex
+org.tug.tex.texinfo:
+- org.tug.tex
+org.tug.texi:
+- public.plain-text
+- public.text
+org.tug.text:
+- public.text
+org.tukaani.lzma-archive:
+- public.archive
+- public.data
+org.tukaani.tar-xz-archive:
+- org.tukaani.xz-archive
+- public.archive
+- public.data
+org.tukaani.xz-archive:
+- public.archive
+- public.data
+org.videolan.amr:
+- public.audio
+org.videolan.aob:
+- public.audio
+org.videolan.ape:
+- public.audio
+org.videolan.axa:
+- public.audio
+org.videolan.axv:
+- public.movie
+org.videolan.divx:
+- public.movie
+org.videolan.dts:
+- public.audio
+org.videolan.gxf:
+- public.movie
+org.videolan.it:
+- public.audio
+org.videolan.mlp:
+- public.audio
+org.videolan.mod:
+- public.audio
+org.videolan.mpc:
+- public.audio
+org.videolan.mpeg-stream:
+- public.movie
+org.videolan.mxf:
+- public.movie
+org.videolan.nsv:
+- public.video
+org.videolan.ogg-audio:
+- public.audio
+org.videolan.oma:
+- public.audio
+org.videolan.rec:
+- public.movie
+org.videolan.rmi:
+- public.audio
+org.videolan.s3m:
+- public.audio
+org.videolan.spx:
+- public.audio
+org.videolan.tod:
+- public.movie
+org.videolan.tta:
+- public.audio
+org.videolan.vlc:
+- public.playlist
+- public.text
+org.videolan.vob:
+- public.video
+org.videolan.voc:
+- public.audio
+org.videolan.vqf:
+- public.audio
+org.videolan.vro:
+- public.movie
+org.videolan.webm:
+- org.matroska.mkv
+- public.movie
+org.videolan.wtv:
+- public.movie
+org.videolan.wv:
+- public.audio
+org.videolan.xa:
+- public.audio
+org.videolan.xesc:
+- public.video
+org.videolan.xm:
+- public.audio
+org.w3.css:
+- public.text
+org.w3.webvtt:
+- public.text
+org.w3.xml-dtd:
+- public.text
+org.w3.xsl:
+- public.xml
+org.webmproject.webm:
+- public.movie
+org.webmproject.webp:
+- public.image
+org.xiph.flac:
+- public.audio
+org.xiph.ogg-audio:
+- public.audio
+org.xiph.ogg-video:
+- public.video
+org.xiph.ogv:
+- public.movie
+org.xiph.opus:
+- public.audio
+org.yaml.yaml:
+- public.text
+public.3d-content:
+- public.content
 public.3gpp:
 - public.movie
 public.3gpp2:
 - public.movie
+public.aac-audio:
+- public.audio
+public.ac3-audio:
+- public.audio
+public.ada-source:
+- public.source-code
 public.aifc-audio:
 - public.audio
 public.aiff-audio:
+- public.aifc-audio
 - public.audio
+public.alembic:
+- public.3d-content
+- public.data
+public.app-category: []
+public.app-category.action-games:
+- public.app-category.games
+public.app-category.adventure-games:
+- public.app-category.games
+public.app-category.arcade-games:
+- public.app-category.games
+public.app-category.board-games:
+- public.app-category.games
+public.app-category.bookmarks:
+- public.app-category
+public.app-category.books:
+- public.app-category
+public.app-category.business:
+- public.app-category
+public.app-category.card-games:
+- public.app-category.games
+public.app-category.casino-games:
+- public.app-category.games
+public.app-category.developer-tools:
+- public.app-category
+public.app-category.dice-games:
+- public.app-category.games
+public.app-category.education:
+- public.app-category
+public.app-category.educational-games:
+- public.app-category.games
+public.app-category.entertainment:
+- public.app-category
+public.app-category.family-games:
+- public.app-category.games
+public.app-category.finance:
+- public.app-category
+public.app-category.food-and-drink:
+- public.app-category
+public.app-category.games:
+- public.app-category
+public.app-category.graphics-design:
+- public.app-category
+public.app-category.healthcare-fitness:
+- public.app-category
+public.app-category.kids-games:
+- public.app-category.games
+public.app-category.lifestyle:
+- public.app-category
+public.app-category.magazines-and-newspapers:
+- public.app-category
+public.app-category.medical:
+- public.app-category
+public.app-category.music:
+- public.app-category
+public.app-category.music-games:
+- public.app-category.games
+public.app-category.navigation:
+- public.app-category
+public.app-category.news:
+- public.app-category
+public.app-category.photography:
+- public.app-category
+public.app-category.photography-and-video:
+- public.app-category.photography
+- public.app-category.video
+public.app-category.productivity:
+- public.app-category
+public.app-category.puzzle-games:
+- public.app-category.games
+public.app-category.racing-games:
+- public.app-category.games
+public.app-category.reference:
+- public.app-category
+public.app-category.role-playing-games:
+- public.app-category.games
+public.app-category.shopping:
+- public.app-category
+public.app-category.simulation-games:
+- public.app-category.games
+public.app-category.social-networking:
+- public.app-category
+public.app-category.sports:
+- public.app-category
+public.app-category.sports-games:
+- public.app-category.games
+public.app-category.strategy-games:
+- public.app-category.games
+public.app-category.travel:
+- public.app-category
+public.app-category.trivia-games:
+- public.app-category.games
+public.app-category.utilities:
+- public.app-category
+public.app-category.video:
+- public.app-category
+public.app-category.weather:
+- public.app-category
+public.app-category.word-games:
+- public.app-category.games
 public.archive: []
+public.archive.apk:
+- public.archive
+- public.data
+public.archive.lha:
+- public.archive
+- public.data
+public.archive.pax:
+- public.archive
+- public.data
 public.assembly-source:
 - public.source-code
+public.au-audio:
+- public.audio
 public.audio:
 - public.audiovisual-content
+- "public.audiovisual-\u200Bcontent"
 public.audiovisual-content:
 - public.content
 - public.data
+public.audiovisual-content-collection: []
+public.avchd-collection:
+- com.apple.package
+- public.audiovisual-content-collection
+public.avchd-content:
+- public.content
+- public.data
+public.avchd-mpeg-2-transport-stream:
+- public.mpeg-2-transport-stream
+public.avci:
+- public.heif-standard
+public.avcs:
+- public.heif-standard
 public.avi:
 - public.movie
+public.bash-script:
+- public.shell-script
+public.block-special:
+- public.item
+public.bookmark: []
+public.bzip2-archive:
+- public.archive
+- public.data
 public.c-header:
 - public.source-code
 public.c-plus-plus-header:
 - public.source-code
+public.c-plus-plus-inline-header:
+- public.c-plus-plus-header
 public.c-plus-plus-source:
 - public.source-code
+public.c-plus-plus-source.preprocessed:
+- public.c-plus-plus-source
+- public.source-code.preprocessed
 public.c-source:
 - public.source-code
+public.c-source.preprocessed:
+- public.c-source
+- public.source-code.preprocessed
 public.calendar-event: []
 public.camera-raw-image:
 - public.image
+public.case-insensitive-text:
+- public.text
+public.cd-based-media:
+- public.optical-storage-media
+public.cd-media:
+- public.cd-based-media
+public.cd-r-media:
+- public.cd-based-media
+public.cd-rw-media:
+- public.cd-based-media
+public.cdda-audio:
+- public.aifc-audio
+public.character-special:
+- public.item
+public.comma-separated-values-text:
+- public.delimited-values-text
+- public.plain-text
 public.composite-content:
 - public.content
+public.computer:
+- public.device
 public.contact: []
 public.content: []
 public.cpio-archive:
+- public.archive
 - public.data
 public.csh-script:
 - public.shell-script
+public.css:
+- public.text
 public.data:
 - public.item
 public.database: []
+public.delimited-values-text:
+- public.text
+public.device: []
 public.directory:
 - public.item
 public.disk-image:
 - public.archive
+public.display: []
+public.downloadable-sound:
+- public.audio
+public.dv-movie:
+- public.movie
+public.dvd-based-media:
+- public.optical-storage-media
+public.dvd-media:
+- public.dvd-based-media
+public.dvd-plus-r-media:
+- public.dvd-based-media
+public.dvd-plus-rw-media:
+- public.dvd-based-media
+public.dvd-r-media:
+- public.dvd-based-media
+public.dvd-ram-media:
+- public.dvd-based-media
+public.dvd-rw-media:
+- public.dvd-based-media
+public.dylan-source:
+- public.source-code
+public.elf-binary:
+- public.data
+- public.executable
+public.email-message:
+- public.message
+public.enhanced-ac3-audio:
+- public.audio
 public.executable: []
 public.fax:
 - public.image
+- public.message
+public.file-sharepoint: []
 public.file-url:
 - public.url
+public.filename-extension:
+- public.case-insensitive-text
+public.flc-animation:
+- public.movie
 public.folder:
 - public.directory
 public.font:
 - public.data
+public.fortran-77-source:
+- public.fortran-source
+public.fortran-90-source:
+- public.fortran-source
+public.fortran-95-source:
+- public.fortran-source
+public.fortran-source:
+- public.source-code
+public.generic-pc:
+- public.computer
+public.geometry-definition-format:
+- public.3d-content
+- public.text
+public.haptics-content: []
+public.hd-dvd-based-media:
+- public.optical-storage-media
+public.hd-dvd-media:
+- public.hd-dvd-based-media
+public.hd-dvd-r-media:
+- public.hd-dvd-based-media
+public.hd-dvd-ram-media:
+- public.hd-dvd-based-media
+public.hd-dvd-rw-media:
+- public.hd-dvd-based-media
+public.heic:
+- public.heif-standard
+public.heics:
+- public.heif-standard
+public.heif:
+- public.heif-standard
+public.heif-standard:
+- public.image
+public.heifs:
+- public.heif-standard
 public.html:
 - public.text
 public.image:
 - public.content
 - public.data
+public.iso-image:
+- com.apple.disk-image
 public.item: []
 public.jpeg:
 - public.image
 public.jpeg-2000:
 - public.image
+public.json:
+- public.text
+public.ksh-script:
+- public.shell-script
+public.lex-source:
+- public.source-code
+public.log:
+- public.item
+public.lrzip-archive:
+- public.archive
+- public.data
+public.lrzip-tar-archive:
+- public.archive
+- public.data
+public.lzip-archive:
+- public.archive
+- public.data
+public.lzip-tar-archive:
+- public.archive
+- public.data
+public.lzop-archive:
+- public.archive
+- public.data
+public.lzop-tar-archive:
+- public.archive
+- public.data
+public.m3u-playlist:
+- public.plain-text
+- public.playlist
+public.make-source:
+- public.script
 public.message: []
+public.midi-audio:
+- public.audio
 public.mig-source:
+- public.source-code
+public.mime-type:
+- public.case-insensitive-text
+public.module-map:
 - public.source-code
 public.movie:
 - public.audiovisual-content
+public.mp2:
+- public.audio
 public.mp3:
+- public.audio
+public.mp4a-latm:
+- public.audio
+public.mp4a-loas:
 - public.audio
 public.mpeg:
 - public.movie
+public.mpeg-2-transport-stream:
+- public.movie
+public.mpeg-2-video:
+- public.video
 public.mpeg-4:
 - public.movie
 public.mpeg-4-audio:
 - public.audio
-- public.mpeg-4
+public.mpo-image:
+- public.image
+public.named-pipe:
+- public.item
+public.nasm-assembly-source:
+- public.source-code
 public.object-code:
 - public.data
 - public.executable
 public.objective-c-plus-plus-source:
 - public.source-code
+public.objective-c-plus-plus-source.preprocessed:
+- public.objective-c-plus-plus-source
+- public.source-code.preprocessed
 public.objective-c-source:
 - public.source-code
+public.objective-c-source.preprocessed:
+- public.objective-c-source
+- public.source-code.preprocessed
+public.opencl-source:
+- public.source-code
+public.opentype-collection-font:
+- public.opentype-font
 public.opentype-font:
 - public.font
+public.optical-storage-media:
+- public.storage
+public.pascal-source:
+- public.source-code
+public.patch-file:
+- public.plain-text
+public.pbm:
+- public.image
 public.perl-script:
 - public.shell-script
 public.php-script:
 - public.shell-script
 public.plain-text:
 - public.text
+public.playlist: []
+public.pls-playlist:
+- public.playlist
+- public.text
 public.png:
 - public.image
+public.polygon-file-format:
+- public.3d-content
+- public.data
+public.precompiled-c-header:
+- public.c-header
+- public.source-code
+public.precompiled-c-plus-plus-header:
+- public.c-plus-plus-header
+- public.source-code
 public.presentation:
 - public.composite-content
+public.protobuf-source:
+- public.source-code
+public.pvr:
+- public.image
 public.python-script:
 - public.shell-script
+public.radiance:
+- public.data
+- public.image
+public.rss:
+- public.xml
 public.rtf:
 - public.text
 public.ruby-script:
 - public.shell-script
 public.script:
 - public.source-code
+public.sdp:
+- public.movie
+- public.text
 public.shell-script:
 - public.script
+public.socket:
+- public.item
 public.source-code:
 - public.plain-text
+public.source-code.preprocessed:
+- public.source-code
+public.speaker: []
+public.spreadsheet:
+- public.content
+public.standard-tesselated-geometry-format:
+- public.3d-content
+- public.data
+public.storage: []
+public.stored-url: []
+public.svg-image:
+- public.image
+- public.xml
+public.swift-source:
+- public.source-code
 public.symlink:
 - com.apple.resolvable
 - public.item
+public.tab-separated-values-text:
+- public.delimited-values-text
+- public.plain-text
 public.tar-archive:
 - org.gnu.gnu-tar-archive
+public.tar-bzip2-archive:
+- public.bzip2-archive
+public.tcsh-script:
+- public.shell-script
 public.text:
 - public.content
 - public.data
 public.tiff:
 - public.image
+public.to-do-item: []
 public.truetype-collection-font:
-- public.font
+- public.truetype-font
 public.truetype-font:
 - public.font
 public.truetype-ttf-font:
 - public.truetype-font
 public.ulaw-audio:
 - public.audio
+public.unix-executable:
+- public.data
+- public.executable
 public.url:
 - public.data
-public.url-name: []
+public.url-name:
+- public.data
 public.utf16-external-plain-text:
 - public.plain-text
 public.utf16-plain-text:
 - public.plain-text
 public.utf8-plain-text:
 - public.plain-text
-public.vcard:
-- public.content
+public.utf8-tab-separated-values-text:
+- public.tab-separated-values-text
+- public.utf8-plain-text
+public.uuencoded-archive:
+- public.archive
 - public.data
+public.vcard:
+- public.contact
+- public.text
 public.video:
 - public.movie
 public.volume:
 - public.folder
+public.x509-certificate:
+- public.data
+public.x509-printable-encoded-archive:
+- public.text
 public.xbitmap-image:
 - public.image
+public.xfd:
+- public.xml
+public.xhtml:
+- public.xml
 public.xml:
 - public.text
+public.yacc-source:
+- public.source-code
+public.yaml:
+- public.text
+public.z-archive:
+- public.archive
+- public.data
+public.zip-archive:
+- com.pkware.zip-archive
+public.zip-archive.first-part:
+- public.zip-archive
+public.zsh-script:
+- public.shell-script
+tk.tcl.tcl:
+- public.source-code
+vnd.oasis.opendocument.graphics-flat-xml:
+- public.content
+- public.data
+vnd.oasis.opendocument.presentation-flat-xml:
+- public.content
+- public.data
+vnd.oasis.opendocument.spreadsheet-flat-xml:
+- public.content
+- public.data
+vnd.oasis.opendocument.text: []
+vnd.oasis.opendocument.text-flat-xml:
+- public.content
+- public.data
