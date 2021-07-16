@@ -348,14 +348,17 @@ class UtiFromFile(UtiFromGeneric):
     :param data_path: path to dump the raw UTI data in YAML.
     :param data_in_path: path to read raw data file.
     """
-    data_in_path: Path = DATA_PATH
+    data_in_path: Optional[Path] = DATA_PATH
 
     @cached_property
     def data(self) -> Dict[str, Set[str]]:
-        logger.info('Loading data from file at %s', self.data_in_path)
-        with open(self.data_in_path, 'r') as f:
-            data = yaml.load(f, Loader=yamlloader.ordereddict.CL)
-        return {key: set(value) for key, value in data.items()}
+        if self.data_in_path is None:
+            return {}
+        else:
+            logger.info('Loading data from file at %s', self.data_in_path)
+            with open(self.data_in_path, 'r') as f:
+                data = yaml.load(f, Loader=yamlloader.ordereddict.CSafeLoader)
+            return {key: set(value) for key, value in data.items()}
 
 
 @dataclass
