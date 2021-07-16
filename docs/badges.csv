@@ -1,0 +1,32 @@
+docs,"
+[![Documentation Status](https://readthedocs.org/projects/apple_uti/badge/?version=latest)](https://apple_uti.readthedocs.io/en/latest/?badge=latest&style=plastic)
+[![Documentation Status](https://github.com/ickc/apple_uti/workflows/GitHub%20Pages/badge.svg)](https://ickc.github.io/apple_uti)
+"
+tests,"
+![GitHub Actions](https://github.com/ickc/apple_uti/workflows/Python%20package/badge.svg)
+[![Coverage Status](https://codecov.io/gh/ickc/apple_uti/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/github/ickc/apple_uti)
+<!--[![Coverage Status](https://coveralls.io/repos/ickc/apple_uti/badge.svg?branch=master&service=github)](https://coveralls.io/r/ickc/apple_uti)-->
+
+[![Codacy Code Quality Status](https://img.shields.io/codacy/grade/078ebc537c5747f68c1d4ad3d3594bbf.svg)](https://www.codacy.com/app/ickc/apple_uti)
+[![Scrutinizer Status](https://img.shields.io/scrutinizer/quality/g/ickc/apple_uti/master.svg)](https://scrutinizer-ci.com/g/ickc/apple_uti/)
+[![CodeClimate Quality Status](https://codeclimate.com/github/ickc/apple_uti/badges/gpa.svg)](https://codeclimate.com/github/ickc/apple_uti)
+"
+package,"
+[![Supported versions](https://img.shields.io/pypi/pyversions/apple_uti.svg)](https://pypi.org/project/apple_uti)
+[![Supported implementations](https://img.shields.io/pypi/implementation/apple_uti.svg)](https://pypi.org/project/apple_uti)
+[![PyPI Wheel](https://img.shields.io/pypi/wheel/apple_uti.svg)](https://pypi.org/project/apple_uti)
+
+[![PyPI Package latest release](https://img.shields.io/pypi/v/apple_uti.svg)](https://pypi.org/project/apple_uti)
+[![GitHub Releases](https://img.shields.io/github/tag/ickc/apple_uti.svg?label=github+release)](https://github.com/ickc/apple_uti/releases)
+[![Development Status](https://img.shields.io/pypi/status/apple_uti.svg)](https://pypi.python.org/pypi/apple_uti/)
+[![Downloads](https://img.shields.io/pypi/dm/apple_uti.svg)](https://pypi.python.org/pypi/apple_uti/)
+
+[![Commits since latest release](https://img.shields.io/github/commits-since/ickc/apple_uti/v0.1.0.svg)](https://github.com/ickc/apple_uti/compare/v0.1.0...master)
+![License](https://img.shields.io/pypi/l/apple_uti.svg)
+"
+conda-forge,"
+[![Conda Recipe](https://img.shields.io/badge/recipe-apple_uti-green.svg)](https://anaconda.org/conda-forge/apple_uti)
+[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/apple_uti.svg)](https://anaconda.org/conda-forge/apple_uti)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/apple_uti.svg)](https://anaconda.org/conda-forge/apple_uti)
+[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/apple_uti.svg)](https://anaconda.org/conda-forge/apple_uti)"
+cite,"[![DOI](https://zenodo.org/badge/74008159.svg)](https://zenodo.org/badge/latestdoi/74008159)"

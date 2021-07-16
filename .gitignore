@@ -1,1 +1,6 @@
 .mypy_cache/
+.DS_Store
+.ipynb_checkpoints
+__pycache__
+dist/apple_uti*
+*.ipynb

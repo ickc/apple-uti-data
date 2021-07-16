@@ -1,0 +1,158 @@
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "apple_uti"
+version = "0.1.0"
+description = "Parse Apple UTI table to usable data structure and dump to YAML."
+license = "BSD-3-Clause"
+keywords = [
+    "Apple",
+    "UTI",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Text Processing :: Filters",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Unix",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Utilities",
+]
+homepage = "https://github.com/ickc/apple_uti"
+repository = "https://github.com/ickc/apple_uti"
+documentation = "https://ickc.github.io/apple_uti"
+authors = ["Kolen Cheung <christian.kolen@gmail.com>"]
+readme = "README.rst"
+packages = [
+    { include = "apple_uti", from = "src" },
+]
+include = [
+    'CHANGELOG.rst',
+    'CONTRIBUTING.rst',
+    'LICENSE',
+    'README.rst',
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pandas = "*"
+pyyaml = "*"
+yamlloader = "*"
+defopt = "*"
+"backports.cached-property" = {python = "<3.8", version = "^1"}
+
+# extras
+coloredlogs = {optional = true, version = ">=14,<16"}
+
+# tests
+coverage = {optional = true, version = "*"}
+coveralls = {optional = true, version = "*"}
+flake8 = {optional = true, version = "*"}
+pytest = {optional = true, version = "*"}
+pytest-cov = {optional = true, version = "*"}
+pytest-parallel = {optional = true, version = "*"}
+pytest-xdist = {optional = true, version = "*"}
+
+# docs: sync this with tox.testenv.docs below
+sphinx = {optional = true, version = ">=3,<5"}
+sphinx-bootstrap-theme = {optional = true, version = "*"}
+pygments-style-solarized = {optional = true, version = "*"}
+sphinxcontrib-apidoc = {optional = true, version = "*"}
+
+[tool.poetry.dev-dependencies]
+tox = "*"
+data-science-types = "*"
+ipykernel = "*"
+mypy = "*"
+bandit = "*"
+bump2version = "*"
+
+[tool.poetry.extras]
+extras = [
+    "coloredlogs",
+    "tabulate",
+    "yamlloader",
+]
+tests = [
+    "coverage",
+    "coveralls",
+    "flake8",
+    "pytest",
+    "pytest-cov",
+    "pytest-parallel",
+    "pytest-xdist",
+]
+docs = [
+    "sphinx",
+    "sphinx-bootstrap-theme",
+    "pygments-style-solarized",
+    "sphinxcontrib-apidoc",
+]
+
+[tool.poetry.scripts]
+apple_uti = 'apple_uti.uti:cli'
+
+[tool.coverage.paths]
+source = [
+    'src',
+    '*/site-packages',
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+    'src',
+    'tests',
+]
+parallel = true
+relative_files = true
+
+[tool.coverage.report]
+show_missing = true
+precision = 2
+
+[tool.pytest.ini_options]
+
+python_files = [
+    'test_*.py',
+    '*_test.py',
+    'tests.py',
+]
+
+addopts = [
+    '-ra',
+    '--strict-markers',
+    '--doctest-modules',
+    '--doctest-glob=\*.rst',
+    '--tb=short',
+]
+
+testpaths = [
+    'tests',
+]
+
+[tool.isort]
+line_length = 120
+known_first_party = 'apple_uti'
+default_section = 'THIRDPARTY'
+forced_separate = 'test_apple_uti'
+skip = [
+    '.tox',
+    '.eggs',
+    'ci/templates',
+    'build',
+    'dist',
+]
