@@ -10,7 +10,7 @@ import re
 
 import pandas as pd
 
-from .util import union, stringify
+from .util import union, stringify, merge_data
 
 if TYPE_CHECKING:
     from typing import List, Union, Dict, Set, Tuple, Optional
@@ -23,8 +23,8 @@ class Node:
     name: str
 
     def __post_init__(self):
-        self.parents = []
-        self.children = []
+        self.parents = set()
+        self.children = set()
 
     def __hash__(self) -> int:
         return hash(self.name)
@@ -41,30 +41,34 @@ class Node:
             return {self, }
 
     @property
-    def proper_grandparents(self) -> List[Node]:
+    def proper_grandparents(self) -> Set[Node]:
         """Return the ultimate grandparents without self."""
-        return sorted(grandparent for grandparent in self.grandparents if grandparent is not self)
+        grandparents = self.grandparents
+        grandparents.discard(self)
+        return grandparents
 
     @property
     def children_and_grandchildren(self) -> Set[Node]:
         """Return children recursively containing self."""
-        if self.children:
-            children_set = set(self.children)
-            return children_set.union(*(child.children_and_grandchildren for child in self.children))
+        children = self.children
+        if children:
+            return children.union(*(child.children_and_grandchildren for child in self.children))
         else:
             return {self, }
 
     @property
-    def proper_children_and_grandchildren(self) -> List[Node]:
+    def proper_children_and_grandchildren(self) -> Set[Node]:
         """Return children recursively without self."""
-        return sorted(children_and_grandchildren for children_and_grandchildren in self.children_and_grandchildren if children_and_grandchildren is not self)
+        children_and_grandchildren = self.children_and_grandchildren
+        children_and_grandchildren.discard(self)
+        return children_and_grandchildren
 
     @property
     def tree(self) -> Union[Node, Dict[Node, list]]:
         """Construct a tree of children and its children recursively."""
         if self.children:
             return {
-                self: [child.tree for child in self.children]
+                self: [child.tree for child in sorted(self.children)]
             }
         else:
             return self
@@ -72,7 +76,11 @@ class Node:
 
 @dataclass
 class UtiNetwork:
-    data: Dict[str, List[str]]
+    """Form a network of UTI nodes.
+
+    :param data: keys are the UTI, and values are the parents as a set that must not contain the key.
+    """
+    data: Dict[str, Set[str]]
 
     @cached_property
     def name_to_node(
@@ -93,8 +101,8 @@ class UtiNetwork:
                         name_to_node[parent_name] = parent = Node(parent_name)
                     else:
                         parent = name_to_node[parent_name]
-                    node.parents.append(parent)
-                    parent.children.append(node)
+                    node.parents.add(parent)
+                    parent.children.add(node)
         logger.info('Obtained %s UTIs.', len(name_to_node))
 
         name_to_node = dict(sorted(name_to_node.items()))
@@ -104,9 +112,8 @@ class UtiNetwork:
     def tree(self) -> List[Dict[Node, dict]]:
         name_to_node = self.name_to_node
 
-        grandgrandparents = union(node.proper_grandparents for node in name_to_node.values())
+        grandgrandparents = sorted(union(node.proper_grandparents for node in name_to_node.values()))
         logger.info('Obtained %s top level UTIs.', len(grandgrandparents))
-        grandgrandparents = sorted(grandgrandparents)
         tree = [grandgrandparent.tree for grandgrandparent in grandgrandparents]
         return tree
 
@@ -114,7 +121,7 @@ class UtiNetwork:
     def children(self) -> Dict[str, List[Node]]:
         name_to_node = self.name_to_node
 
-        return {name: node.proper_children_and_grandchildren for name, node in name_to_node.items()}
+        return {name: sorted(node.proper_children_and_grandchildren) for name, node in name_to_node.items()}
 
     @cached_property
     def tree_json_like(self) -> List[Dict[str, dict]]:
@@ -131,7 +138,7 @@ class UtiFromGeneric:
     children_path: Path = Path('dist/UTI-children.yml')
 
     @property
-    def data(self) -> Dict[str, List[str]]:
+    def data(self) -> Dict[str, Set[str]]:
         raise NotImplementedError
 
     def run_all(self):
@@ -199,10 +206,10 @@ class UtiFromWeb(UtiFromGeneric):
         return df
 
     @cached_property
-    def data(self) -> Dict[str, List[str]]:
+    def data(self) -> Dict[str, Set[str]]:
         return {
             self.parse_node(row.iloc[0]):
-            self.parse_parent(row.iloc[1])
+            set(self.parse_parent(row.iloc[1]))
             for _, row in self.table.iterrows()
         }
 
@@ -275,7 +282,7 @@ class UtiFromSystem(UtiFromGeneric):
             return []
 
     @cached_property
-    def table(self):
+    def table_full(self):
         text = self.get_lsregister_dump
         summary, data = self.split_lsregister_dump(text)
         logger.info('lsregister summary:\n%s', summary)
@@ -287,25 +294,30 @@ class UtiFromSystem(UtiFromGeneric):
             assert set(keys) == set(dict_.keys())
 
         df = pd.DataFrame([self.parse_datum(datum) for datum in data])
+        logger.info('Obtained a table with shape %s', df.shape)
+        return df
+
+    @cached_property
+    def table(self):
+        df = self.table_full
         df_uti = df[~df.uti.isna()].dropna(axis=1, how='all')
-        logger.info('Obtained a table with shape %s', df_uti.shape)
+        logger.info('Filtered table with UTI data only with shape %s', df_uti.shape)
         return df_uti
 
     @cached_property
-    def data(self) -> Dict[str, List[str]]:
+    def data(self) -> Dict[str, Set[str]]:
         from collections import defaultdict
 
         df_uti = self.table
 
-        temp: Dict[str, Set[str]] = defaultdict(set)
+        res: Dict[str, Set[str]] = defaultdict(set)
         for _, row in df_uti.iterrows():
-            temp[row.uti].update(self.parse_parent(row['conforms to']))
-        logger.info('Consolidated data into %s unique UTIs.', len(temp))
-        for name, parents in temp.items():
+            res[row.uti].update(self.parse_parent(row['conforms to']))
+        logger.info('Consolidated data into %s unique UTIs.', len(res))
+        for name, parents in res.items():
             if name in parents:
                 logger.warning('%s in %s', name, parents)
                 parents.remove(name)
-        res = {key: sorted(value) for key, value in temp.items()}
         return res
 
 
@@ -320,7 +332,7 @@ class UtiFromAll(UtiFromWeb, UtiFromSystem):
     """
 
     @cached_property
-    def data(self) -> Dict[str, List[str]]:
+    def data(self) -> Dict[str, Set[str]]:
         uti_from_web = UtiFromWeb(
             tree_path=self.tree_path,
             children_path=self.children_path,
@@ -331,10 +343,4 @@ class UtiFromAll(UtiFromWeb, UtiFromSystem):
             children_path=self.children_path,
             path=self.path,
         )
-        data = uti_from_web.data.copy()
-        for key, value in uti_from_system.data.items():
-            if key in data:
-                data[key] = sorted(set(data[key]) | set(value))
-            else:
-                data[key] = value
-        return data
+        return merge_data(uti_from_web.data, uti_from_system.data)
