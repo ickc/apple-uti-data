@@ -354,7 +354,7 @@ class UtiFromFile(UtiFromGeneric):
     def data(self) -> Dict[str, Set[str]]:
         logger.info('Loading data from file at %s', self.data_in_path)
         with open(self.data_in_path, 'r') as f:
-            data = yaml.load(f, Loader=yamlloader.ordereddict.CSafeLoader)
+            data = yaml.load(f, Loader=yamlloader.ordereddict.CL)
         return {key: set(value) for key, value in data.items()}
 
 
