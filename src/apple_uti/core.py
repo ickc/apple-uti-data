@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Optional
 from pathlib import Path
 from functools import cached_property
 from dataclasses import dataclass
@@ -16,7 +16,7 @@ from .util import union, stringify, merge_data
 from .data import DATA_PATH
 
 if TYPE_CHECKING:
-    from typing import List, Union, Dict, Set, Tuple, Optional
+    from typing import List, Union, Dict, Set, Tuple
 
 logger = getLogger('apple_uti')
 
