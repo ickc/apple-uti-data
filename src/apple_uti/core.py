@@ -70,7 +70,65 @@ class Node:
 
 
 @dataclass
-class UtiFromWeb:
+class Uti:
+
+    @property
+    def data(self) -> Dict[str, List[str]]:
+        raise NotImplementedError
+
+    @cached_property
+    def name_to_node(
+        self,
+    ) -> Dict[str, Node]:
+        """Return a dict from name to a node with that name."""
+        data = self.data
+
+        name_to_node: Dict[str, Node] = {}
+        for name, parent_names in data.items():
+            if name not in name_to_node:
+                name_to_node[name] = node = Node(name)
+            else:
+                node = name_to_node[name]
+            if parent_names:
+                for parent_name in parent_names:
+                    if parent_name not in name_to_node:
+                        name_to_node[parent_name] = parent = Node(parent_name)
+                    else:
+                        parent = name_to_node[parent_name]
+                    node.parents.append(parent)
+                    parent.children.append(node)
+        logger.info('Obtained %s UTIs.', len(name_to_node))
+
+        name_to_node = dict(sorted(name_to_node.items()))
+        return name_to_node
+
+    @cached_property
+    def tree(self) -> List[Dict[Node, dict]]:
+        name_to_node = self.name_to_node
+
+        grandgrandparents = union(node.proper_grandparents for node in name_to_node.values())
+        logger.info('Obtained %s top level UTIs.', len(grandgrandparents))
+        grandgrandparents = sorted(grandgrandparents)
+        tree = [grandgrandparent.tree for grandgrandparent in grandgrandparents]
+        return tree
+
+    @cached_property
+    def children(self) -> Dict[str, List[Node]]:
+        name_to_node = self.name_to_node
+
+        return {name: node.proper_children_and_grandchildren for name, node in name_to_node.items()}
+
+    @cached_property
+    def tree_json_like(self) -> List[Dict[str, dict]]:
+        return stringify(self.tree)
+
+    @cached_property
+    def children_json_like(self) -> List[Dict[str, dict]]:
+        return stringify(self.children)
+
+
+@dataclass
+class UtiFromWeb(Uti):
     url: str = 'https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html'
 
     @staticmethod
@@ -101,61 +159,19 @@ class UtiFromWeb:
             return ['public.mpeg-4' if uti == 'public.mpeg4' else uti for uti in res]
 
     @cached_property
-    def name_to_node(
+    def table(
         self,
-    ) -> Dict[str, Node]:
-        """Return a dict from name to a node with that name."""
+    ) -> pd.DataFrame:
         url = self.url
-
         dfs = pd.read_html(url)
         df = dfs[0]
         logger.info('Obtained a table from %s with shape %s', url, df.shape)
+        return df
 
-        name_to_node: Dict[str, Node] = {}
-        for i, row in df.iterrows():
-            try:
-                name = self.parse_node(row.iloc[0])
-            except Exception:
-                raise RuntimeError(f'Cannot parse {name} in row {i}')
-            if name not in name_to_node:
-                name_to_node[name] = node = Node(name)
-            else:
-                node = name_to_node[name]
-
-            parent_names = self.parse_parent(row.iloc[1])
-            if parent_names:
-                for parent_name in parent_names:
-                    if parent_name not in name_to_node:
-                        name_to_node[parent_name] = parent = Node(parent_name)
-                    else:
-                        parent = name_to_node[parent_name]
-                    node.parents.append(parent)
-                    parent.children.append(node)
-        logger.info('Obtained %s UTIs.', len(name_to_node))
-
-        name_to_node = dict(sorted(name_to_node.items()))
-        return name_to_node
-
-    @property
-    def tree(self) -> List[Dict[Node, dict]]:
-        name_to_node = self.name_to_node
-
-        grandgrandparents = union(node.proper_grandparents for node in name_to_node.values())
-        logger.info('Obtained %s top level UTIs.', len(grandgrandparents))
-        grandgrandparents = sorted(grandgrandparents)
-        tree = [grandgrandparent.tree for grandgrandparent in grandgrandparents]
-        return tree
-
-    @property
-    def children(self) -> Dict[str, List[Node]]:
-        name_to_node = self.name_to_node
-
-        return {name: node.proper_children_and_grandchildren for name, node in name_to_node.items()}
-
-    @property
-    def tree_json_like(self) -> List[Dict[str, dict]]:
-        return stringify(self.tree)
-
-    @property
-    def children_json_like(self) -> List[Dict[str, dict]]:
-        return stringify(self.children)
+    @cached_property
+    def data(self) -> Dict[str, List[str]]:
+        return {
+            self.parse_node(row.iloc[0]):
+            self.parse_parent(row.iloc[1])
+            for _, row in self.table.iterrows()
+        }
