@@ -4,3 +4,5 @@
 __pycache__
 dist/apple_uti*
 *.ipynb
+setup.py
+*.egg-info/
