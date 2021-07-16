@@ -44,6 +44,7 @@ include = [
     'CONTRIBUTING.rst',
     'LICENSE',
     'README.rst',
+    'src/apple_uti/data/data.yml',
 ]
 
 [tool.poetry.dependencies]
