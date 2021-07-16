@@ -9,8 +9,11 @@ import string
 import re
 
 import pandas as pd
+import yaml
+import yamlloader
 
 from .util import union, stringify, merge_data
+from .data import DATA_PATH
 
 if TYPE_CHECKING:
     from typing import List, Union, Dict, Set, Tuple, Optional
@@ -136,6 +139,7 @@ class UtiNetwork:
 class UtiFromGeneric:
     tree_path: Path = Path('dist/UTI-tree.yml')
     children_path: Path = Path('dist/UTI-children.yml')
+    data_path: Path = Path('src/apple_uti/data/data.yml')
 
     @property
     def data(self) -> Dict[str, Set[str]]:
@@ -145,9 +149,21 @@ class UtiFromGeneric:
         import yaml
         import yamlloader
 
-        uti = UtiNetwork(self.data)
+        data = self.data
+
+        uti = UtiNetwork(data)
         tree_path = self.tree_path
         children_path = self.children_path
+        data_path = self.data_path
+
+        data_path.parent.mkdir(parents=True, exist_ok=True)
+        with data_path.open('w') as f:
+            yaml.dump(
+                {key: sorted(data[key]) for key in sorted(data.keys())},
+                f,
+                Dumper=yamlloader.ordereddict.CSafeDumper,
+                default_flow_style=False,
+            )
 
         tree_path.parent.mkdir(parents=True, exist_ok=True)
         with tree_path.open('w') as f:
@@ -164,6 +180,7 @@ class UtiFromWeb(UtiFromGeneric):
 
     :param tree_path: path to dump a tree structure of the UTI in YAML.
     :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param data_path: path to dump the raw UTI data in YAML.
     :param url: url to Apple's documentation on UTI.
     """
     url: str = 'https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html'
@@ -220,6 +237,7 @@ class UtiFromSystem(UtiFromGeneric):
 
     :param tree_path: path to dump a tree structure of the UTI in YAML.
     :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param data_path: path to dump the raw UTI data in YAML.
     :param path: path to lsregister.
     """
     path: Path = Path('/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister')
@@ -322,13 +340,34 @@ class UtiFromSystem(UtiFromGeneric):
 
 
 @dataclass
-class UtiFromAll(UtiFromWeb, UtiFromSystem):
+class UtiFromFile(UtiFromGeneric):
     """Parse Apple UTI table to usable data structure and dump to YAML.
 
     :param tree_path: path to dump a tree structure of the UTI in YAML.
     :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param data_path: path to dump the raw UTI data in YAML.
+    :param data_in_path: path to read raw data file.
+    """
+    data_in_path: Path = DATA_PATH
+
+    @cached_property
+    def data(self) -> Dict[str, Set[str]]:
+        logger.info('Loading data from file at %s', self.data_in_path)
+        with open(self.data_in_path, 'r') as f:
+            data = yaml.load(f, Loader=yamlloader.ordereddict.CSafeLoader)
+        return {key: set(value) for key, value in data.items()}
+
+
+@dataclass
+class UtiFromAll(UtiFromWeb, UtiFromSystem, UtiFromFile):
+    """Parse Apple UTI table to usable data structure and dump to YAML.
+
+    :param tree_path: path to dump a tree structure of the UTI in YAML.
+    :param children_path: path to dump a mapping from UTI to all children in YAML.
+    :param data_path: path to dump the raw UTI data in YAML.
     :param url: url to Apple's documentation on UTI.
     :param path: path to lsregister.
+    :param data_in_path: path to write raw data file.
     """
 
     @cached_property
@@ -336,11 +375,19 @@ class UtiFromAll(UtiFromWeb, UtiFromSystem):
         uti_from_web = UtiFromWeb(
             tree_path=self.tree_path,
             children_path=self.children_path,
+            data_path=self.data_path,
             url=self.url,
         )
         uti_from_system = UtiFromSystem(
             tree_path=self.tree_path,
             children_path=self.children_path,
+            data_path=self.data_path,
             path=self.path,
         )
-        return merge_data(uti_from_web.data, uti_from_system.data)
+        uti_from_file = UtiFromFile(
+            tree_path=self.tree_path,
+            children_path=self.children_path,
+            data_path=self.data_path,
+            data_in_path=self.data_in_path,
+        )
+        return merge_data(uti_from_web.data, uti_from_system.data, uti_from_file.data)
